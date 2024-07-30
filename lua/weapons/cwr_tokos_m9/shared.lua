@@ -35,6 +35,7 @@ if CLIENT then
 
 	
 	SWEP.AttachmentModelsVM = {
+		["pistollaser"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/r_pistol_laser.mdl", bone = "weapon", rel = "", pos = Vector(0, 0, 3.023), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["nato_pistolsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/r_pistol_suppresor.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.492, 4.849), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 	}
@@ -49,12 +50,14 @@ SWEP.MuzzleVelocity = 880 -- in meter/s
 
 
 
-
+    SWEP.PistolLaserPosAdjust = Vector(0, 0, 0)
+	SWEP.PistolLaserAngAdjust = Angle(0, 0, 0)
 
 
 
 SWEP.Attachments = {
 	 {header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
+	 {header = "Tactical Device", offset = {-500, 100}, atts = {"pistollaser"}},
 	["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
 }
 	
