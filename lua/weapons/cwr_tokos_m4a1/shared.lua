@@ -118,7 +118,7 @@ SWEP.Sounds = {
 	}
 }
 
-SWEP.SpeedDec = 80
+SWEP.SpeedDec = 50
 
 SWEP.Slot = 2
 SWEP.SlotPos = 0
@@ -173,6 +173,8 @@ SWEP.ReloadTime_Empty = 3
 SWEP.ReloadHalt_Empty = 3
 
 SWEP.SnapToIdlePostReload = false
+
+
 
 
 SWEP.InspectAnim = "inspect" -- Needs to be in self.Animations

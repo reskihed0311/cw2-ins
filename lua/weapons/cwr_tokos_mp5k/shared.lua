@@ -108,7 +108,8 @@ SWEP.Sounds = {
 
 	inspect = {
 
-		{time = 1.35, sound = "weapons/tokos/weapons/ak74/ak74_magrelease.wav"},
+		{time = 2.35, sound = "weapons/tokos/weapons/mp5k/mp5k_magout.wav"},
+		{time = 4.6, sound = "weapons/tokos/weapons/mp5k/mp5k_magin.wav"},
 
 
 
