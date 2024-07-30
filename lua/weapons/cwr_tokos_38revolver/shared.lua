@@ -3,10 +3,13 @@ AddCSLuaFile("sh_sounds.lua")
 include("sh_sounds.lua")
 
 
+CustomizableWeaponry:registerAmmo(".38 Special", ".38 Special", 9, 6)
+
+
 if CLIENT then
 	SWEP.UseHands = true
 	SWEP.DrawCrosshair = false
-	SWEP.PrintName = "MP5-K"
+	SWEP.PrintName = "Model .38"
 	SWEP.CSMuzzleFlashes = true
 	SWEP.ViewModelMovementScale = 1.15
 	
@@ -23,7 +26,7 @@ if CLIENT then
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "smallshell"
 	
-	SWEP.IronsightPos = Vector(-2.945, -5.611, 0.639)
+	SWEP.IronsightPos = Vector(-3.392, -2.692, 1.12)
 	SWEP.IronsightAng = Vector(0, 0, 0)
 
 	
@@ -31,7 +34,6 @@ if CLIENT then
 	SWEP.AlternativeAng = Vector(0, 0, -3)
 	
 
-	
 
 	
 	SWEP.AttachmentModelsVM = {}
@@ -46,7 +48,7 @@ SWEP.MuzzleVelocity = 880 -- in meter/s
 
 
 
-
+SWEP.Chamberable = false
 
 
 
@@ -84,32 +86,26 @@ end //*/
 SWEP.Animations = {
 
 	fire = "fire",
+	fire_aim = "fire",
+	fire_last_aim = "fire",
 	inspect = "inspect",
-	fire_aim = "fire_iron",
 	reload = "reload",
-	reload_empty = "reload_empty",
 	draw = "draw",
 }
 	
 SWEP.Sounds = {
 
 	reload = {
-		{time = 0.3, sound = "weapons/tokos/weapons/mp5k/mp5k_magrelease.wav"},
-		{time = 0.4, sound = "weapons/tokos/weapons/mp5k/mp5k_magout.wav"},
-		{time = 1.65, sound = "weapons/tokos/weapons/mp5k/mp5k_magin.wav"},
-	},
-
-	reload_empty = {
-		{time = 0.25, sound = "weapons/tokos/weapons/mp5k/mp5k_boltback.wav"},
-		{time = 1.35, sound = "weapons/tokos/weapons/mp5k/mp5k_magout.wav"},
-		{time = 1.75, sound = "weapons/tokos/weapons/mp5k/mp5k_magin.wav"},
-		{time = 2.4, sound = "weapons/tokos/weapons/mp5k/mp5k_boltrelease.wav"},
+		{time = 0.45, sound = "weapons/tokos/weapons/38rev/revolver_open_chamber.wav"},
+		{time = 0.95, sound = "weapons/tokos/weapons/38rev/revolver_dump_rounds_02.wav"},
+		{time = 1.8, sound = "weapons/tokos/weapons/38rev/revolver_speed_loader_insert_01.wav"},
+		{time = 2.7, sound = "weapons/tokos/weapons/38rev/revolver_close_chamber.wav"},
 	},
 
 	inspect = {
 
-		{time = 1.35, sound = "weapons/tokos/weapons/ak74/ak74_magrelease.wav"},
-
+		{time = 2.7, sound = "weapons/tokos/weapons/38rev/revolver_open_chamber.wav"},
+		{time = 7.1, sound = "weapons/tokos/weapons/38rev/revolver_close_chamber.wav"},
 
 
 	}
@@ -121,7 +117,7 @@ SWEP.Slot = 2
 SWEP.SlotPos = 0
 SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"
-SWEP.FireModes = {"auto", "semi"}
+SWEP.FireModes = {"semi"}
 SWEP.Base = "cw_base"
 SWEP.Category = "[CW 2.0] Tokoyami's"
 
@@ -132,21 +128,20 @@ SWEP.Instructions	= ""
 
 SWEP.ViewModelFOV	= 70
 SWEP.ViewModelFlip	= false
-SWEP.ViewModel		= "models/tokos_weaponry/mp5k/tokos_mp5k.mdl"
-SWEP.WorldModel		= "models/weapons/w_smg_mp5.mdl"
+SWEP.ViewModel		= "models/tokos_weaponry/38revolver/tokos38revolver.mdl"
+SWEP.WorldModel		= "models/weapons/w_357.mdl"
 
 SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
-SWEP.Primary.ClipSize		= 30
+SWEP.Primary.ClipSize		= 6
 SWEP.Primary.DefaultClip	= 5000
-SWEP.Primary.Automatic		= true
-SWEP.Primary.Ammo			= "9x19MM"
+SWEP.Primary.Automatic		= false
+SWEP.Primary.Ammo			= ".38 Special"
 
-SWEP.FireDelay = 60 / 800
-SWEP.FireSound = "TOKOS_MP5K_FIRE"
-SWEP.FireSoundSuppressed = "TOKOS_MP5K_FIRE_SUPPRESSED"
-SWEP.Recoil = 0.45
+SWEP.FireDelay = 60 / 250
+SWEP.FireSound = "TOKOS_38_FIRE"
+SWEP.Recoil = 3
 
 
 SWEP.AimMobilitySpreadMod = 0.1
@@ -159,7 +154,7 @@ SWEP.MaxSpreadInc = 0.010
 SWEP.SpreadPerShot = 0.001
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
-SWEP.Damage = 29
+SWEP.Damage = 60
 SWEP.DeployTime = 0.2
 
 SWEP.ReloadSpeed = 1
