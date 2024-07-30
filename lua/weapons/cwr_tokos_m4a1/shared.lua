@@ -19,8 +19,8 @@ if CLIENT then
 	SWEP.ShellScale = 0.5
 	SWEP.ShellOffsetMul = 0
 	SWEP.ShellPosOffset = {x = 0, y = 0, z = 0}
-	SWEP.ForeGripOffsetCycle_Reload = 0.65
-	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
+	SWEP.ForeGripOffsetCycle_Reload = 0.8
+	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.90
 	
 	
 	SWEP.IronsightPos = Vector(-2.501, -7.016, 0.439)
@@ -31,14 +31,39 @@ if CLIENT then
 	SWEP.AlternativeAng = Vector(0, 0, -3)
 	
 
-	
-
-	
-	SWEP.AttachmentModelsVM = {}
-
+	SWEP.M4Pos = Vector(-2.52, -4.776, 0.56)
+    SWEP.M4Ang = Vector(0, 0, 0)
 
 
 	
+	SWEP.AttachmentModelsVM = {
+
+		["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["sec_vfg"] = { type = "Model", model = "models/tokos_weaponry/shared/grips/a_foregrip_sec.mdl", bone = "weapon", rel = "", pos = Vector(0, 0, 7.659), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	
+	}
+
+	SWEP.ForegripOverridePos = {
+
+		["default"] = {},
+
+		["vfg"] = {
+
+			["ValveBiped.Bip01_L_Finger1"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(-20.319, -75.377, 0) },
+	["ValveBiped.Bip01_L_Finger02"] = { scale = Vector(1.003, 1.003, 1.003), pos = Vector(0, 0, 0), angle = Angle(0, 49.314, 0) },
+	["ValveBiped.Bip01_L_Finger4"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(1.713, -7.505, 39.639) },
+	["ValveBiped.Bip01_L_Clavicle"] = { scale = Vector(1, 1, 1), pos = Vector(-1.843, 0.407, -2.018), angle = Angle(0, 0, 0) },
+	["ValveBiped.Bip01_L_Finger0"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(14.52, -0.613, 0) },
+	["ValveBiped.Bip01_L_Finger2"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, -65.815, 0) },
+	["ValveBiped.Bip01_L_Finger3"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(10.055, -41.151, 20.844) },
+	["ValveBiped.Bip01_L_Finger01"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(18.007, 67.543, 0) },
+	["ValveBiped.Bip01_L_Hand"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(-42.929, 21.372, 50.826) }
+
+		},
+}
+	
+
+
 	
 end
 
@@ -47,10 +72,17 @@ SWEP.MuzzleVelocity = 880 -- in meter/s
 
 
 
+SWEP.SightBGs = {main = 1 , regular = 0 , none = 1}
+SWEP.FrontBGs = {main = 2 , regular = 0 , none = 1}
+
+
 
 
 SWEP.Attachments = {
-	["+reload"] = {header = "Ammo", offset = {900, -100}, atts = {"am_magnum", "am_matchgrade"}}
+	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc"}},
+	{header = "Lower Rail", offset = {0, 350}, atts = {"sec_vfg"}},
+	{header = "FS", offset = {0, -100}, atts = {"nofs"}},
+	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}},
 }
 	
 
