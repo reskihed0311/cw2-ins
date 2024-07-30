@@ -11,7 +11,7 @@ if CLIENT then
 	att.displayIcon = surface.GetTextureID("vgui/atts/r_corioenforcer")
 	att.description = {[1] = {t = "A bulky reliable sight.", c = CustomizableWeaponry.textColors.POSITIVE}}
 	
-	att.reticle = "models/r_shared/rets/rets/aimpoint_reticule"
+	att.reticle = "models/r_shared/rets/aimpoint_reticule"
 	att._reticleSize = 50
 	
 	function att:drawReticle()

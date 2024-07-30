@@ -4,7 +4,7 @@
 	"$bumpmap"	"models\r_shared\eotech_lense_nm"
 	"normalmapalphaenvmapmask"	"1"
 	"$color" 		"[.5 .5 .5]"
-	"$model" 		"0"
+	"$model" 		"0	"
 	"$translucent" 	"1"
 	"$phong"		"1"
 	"$phongtint"	"[.5 .5 .5]"

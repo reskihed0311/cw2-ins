@@ -1,0 +1,11 @@
+"UnlitGeneric"
+
+{
+	"$basetexture"	"models\r_shared\rets\aimpoint_reticule"
+	"$detail"		"models\r_shared\rets\laser_noise"
+	"$detailblendmode" "2"
+	"$detailframe"	"0"
+	"$translucent" 	"1"
+	"$additive"	"1"
+
+}
