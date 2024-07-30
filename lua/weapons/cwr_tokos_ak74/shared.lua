@@ -10,10 +10,10 @@ if CLIENT then
 	SWEP.CSMuzzleFlashes = true
 	SWEP.ViewModelMovementScale = 1.15
 	
-	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_mwii_mike4")
-	killicon.Add( "cwr_mwii_mike4", "vgui/entities/cwr_mwii_mike4", Color(255, 0, 0, 0))
+	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_ak74")
+	killicon.Add( "cwr_tokos_ak74", "vgui/entities/cwr_tokos_ak74", Color(255, 0, 0, 0))
 	
-	SWEP.MuzzleEffect = "muzzleflash_pistol"
+	SWEP.MuzzleEffect = "muzzleflash_ak47"
 	SWEP.PosBasedMuz = false
 	SWEP.SnapToGrip = true
 	SWEP.ShellScale = 0.5
@@ -44,14 +44,6 @@ end
 
 SWEP.MuzzleVelocity = 880 -- in meter/s
 
-SWEP.SightBGs = {main = 5 , on = 0 , none = 1}
-SWEP.BarrelBGs = {main = 3 , regular = 0 , none = 1}
-SWEP.StockBGs = {main = 2 , regular = 0 , none = 1}
-SWEP.FrontBGs = {main = 6 , short = 2 , long = 0 , med = 1 , none = 3}
-
-SWEP.AttachmentDependencies = {
-	["bruentiltgrip_s"] = {"firebandhg", "shroudhg"},
-} 
 
 
 
@@ -160,9 +152,9 @@ SWEP.Primary.Ammo			= "5.56x45MM"
 SWEP.FireDelay = 60 / 600
 SWEP.FireSound = "TOKOS_AK_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_AK_FIRE_SUPPRESSED"
-SWEP.Recoil = 0.60
+SWEP.Recoil = 0.9
 
---paloma shit
+
 
 SWEP.AimMobilitySpreadMod = 0.1
 SWEP.VelocitySensitivity = 0.5
