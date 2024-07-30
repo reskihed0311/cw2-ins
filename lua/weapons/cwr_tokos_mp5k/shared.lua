@@ -6,7 +6,7 @@ include("sh_sounds.lua")
 if CLIENT then
 	SWEP.UseHands = true
 	SWEP.DrawCrosshair = false
-	SWEP.PrintName = "AK-74N"
+	SWEP.PrintName = "MP5-K"
 	SWEP.CSMuzzleFlashes = true
 	SWEP.ViewModelMovementScale = 1.15
 	
@@ -21,9 +21,9 @@ if CLIENT then
 	SWEP.ShellPosOffset = {x = 0, y = 0, z = 0}
 	SWEP.ForeGripOffsetCycle_Reload = 0.65
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
+	SWEP.Shell = "smallshell"
 	
-	
-	SWEP.IronsightPos = Vector(-2.241, -7.753, 0.72)
+	SWEP.IronsightPos = Vector(-2.945, -5.611, 0.639)
 	SWEP.IronsightAng = Vector(0, 0, 0)
 
 	
@@ -44,14 +44,7 @@ end
 
 SWEP.MuzzleVelocity = 880 -- in meter/s
 
-SWEP.SightBGs = {main = 5 , on = 0 , none = 1}
-SWEP.BarrelBGs = {main = 3 , regular = 0 , none = 1}
-SWEP.StockBGs = {main = 2 , regular = 0 , none = 1}
-SWEP.FrontBGs = {main = 6 , short = 2 , long = 0 , med = 1 , none = 3}
 
-SWEP.AttachmentDependencies = {
-	["bruentiltgrip_s"] = {"firebandhg", "shroudhg"},
-} 
 
 
 
@@ -101,35 +94,28 @@ SWEP.Animations = {
 SWEP.Sounds = {
 
 	reload = {
-		{time = 0, sound = "weapons/tokos/weapons/ak74/ak74_rattle.wav"},
-		{time = 0.70, sound = "weapons/tokos/weapons/ak74/ak74_magrelease.wav"},
-		{time = 0.75, sound = "weapons/tokos/weapons/ak74/ak74_magout.wav"},
-		{time = 1.3, sound = "weapons/tokos/weapons/ak74/ak74_magin.wav"},
+		{time = 0.3, sound = "weapons/tokos/weapons/mp5k/mp5k_magrelease.wav"},
+		{time = 0.4, sound = "weapons/tokos/weapons/mp5k/mp5k_magout.wav"},
+		{time = 1.65, sound = "weapons/tokos/weapons/mp5k/mp5k_magin.wav"},
 	},
 
 	reload_empty = {
-		{time = 0.31, sound = "weapons/tokos/weapons/ak74/ak74_magrelease.wav"},
-		{time = 0.45, sound = "weapons/tokos/weapons/ak74/ak74_magout.wav"},
-		{time = 1.5, sound = "weapons/tokos/weapons/ak74/ak74_magin.wav"},
-		{time = 2.1, sound = "weapons/tokos/weapons/ak74/ak74_boltback.wav"},
-		{time = 2.25, sound = "weapons/tokos/weapons/ak74/ak74_boltrelease.wav"},
+		{time = 0.25, sound = "weapons/tokos/weapons/mp5k/mp5k_boltback.wav"},
+		{time = 1.35, sound = "weapons/tokos/weapons/mp5k/mp5k_magout.wav"},
+		{time = 1.75, sound = "weapons/tokos/weapons/mp5k/mp5k_magin.wav"},
+		{time = 2.4, sound = "weapons/tokos/weapons/mp5k/mp5k_boltrelease.wav"},
 	},
 
 	inspect = {
 
 		{time = 1.35, sound = "weapons/tokos/weapons/ak74/ak74_magrelease.wav"},
-		{time = 1.48, sound = "weapons/tokos/weapons/ak74/ak74_magout.wav"},
-		{time = 3.1, sound = "weapons/tokos/weapons/ak74/ak74_rattle.wav"},
-		{time = 3.65, sound = "weapons/tokos/weapons/ak74/ak74_magin.wav"},
-		{time = 4.35, sound = "weapons/tokos/weapons/ak74/ak74_boltback.wav"},
-		{time = 5.2, sound = "weapons/tokos/weapons/ak74/ak74_boltrelease.wav"},
 
 
 
 	}
 }
 
-SWEP.SpeedDec = 80
+SWEP.SpeedDec = 0
 
 SWEP.Slot = 2
 SWEP.SlotPos = 0
@@ -146,8 +132,8 @@ SWEP.Instructions	= ""
 
 SWEP.ViewModelFOV	= 70
 SWEP.ViewModelFlip	= false
-SWEP.ViewModel		= "models/tokos_weaponry/ak74/tokos_ak74.mdl"
-SWEP.WorldModel		= "models/weapons/w_rif_ak47.mdl"
+SWEP.ViewModel		= "models/tokos_weaponry/mp5k/tokos_mp5k.mdl"
+SWEP.WorldModel		= "models/weapons/w_smg_mp5.mdl"
 
 SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
@@ -155,27 +141,26 @@ SWEP.AdminSpawnable		= true
 SWEP.Primary.ClipSize		= 30
 SWEP.Primary.DefaultClip	= 5000
 SWEP.Primary.Automatic		= true
-SWEP.Primary.Ammo			= "5.56x45MM"
+SWEP.Primary.Ammo			= "9x19MM"
 
-SWEP.FireDelay = 60 / 600
-SWEP.FireSound = "TOKOS_AK_FIRE"
-SWEP.FireSoundSuppressed = "TOKOS_AK_FIRE_SUPPRESSED"
-SWEP.Recoil = 0.60
+SWEP.FireDelay = 60 / 800
+SWEP.FireSound = "TOKOS_MP5K_FIRE"
+SWEP.FireSoundSuppressed = "TOKOS_MP5K_FIRE_SUPPRESSED"
+SWEP.Recoil = 0.45
 
---paloma shit
 
 SWEP.AimMobilitySpreadMod = 0.1
 SWEP.VelocitySensitivity = 0.5
 
-SWEP.HipSpread = 0.50
-SWEP.AimSpread = 0.002
+SWEP.HipSpread = 0.10
+SWEP.AimSpread = 0.005
 SWEP.VelocitySensitivity = 1
-SWEP.MaxSpreadInc = 0.005
-SWEP.SpreadPerShot = 0.0001
+SWEP.MaxSpreadInc = 0.010
+SWEP.SpreadPerShot = 0.001
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
-SWEP.Damage = 42
-SWEP.DeployTime = 0.6
+SWEP.Damage = 29
+SWEP.DeployTime = 0.2
 
 SWEP.ReloadSpeed = 1
 SWEP.ReloadTime = 2.5
