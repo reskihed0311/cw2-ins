@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	$basetexture				"models\weapons\cw_tokos\m1carbine\m1_carbine_2_d"
+	$bumpmap					"models\weapons\cw_tokos\m1carbine\m1_carbine_2_n"
+              "$phongexponenttexture"		"models\weapons\cw_tokos\m1carbine\m1_carbine_2_s"
+              $phongwarptexture			"models\weapons\cw_tokos\m1carbine\phongwarp_metal"
+                "$color2"					"[0.695 0.695 0.695]"
+//	"$color2"					"[0.315 0.315 0.315]"
+        $normalmapalphaenvmapmask	"1"
+	$envmap						env_cubemap
+	$envmaptint					"[ .02 .02 .02 ]"		
+	$phong						1
+	$phongexponent				23.25
+	$phongboost					17.45
+	$phongfresnelranges             "[.3 4 5]"
+        $rimmask					"1"
+        $rimlightexponent			"21.5"	
+	$rimlight					"1"
+	$rimlightboost		"3.15"
+        $nocull "1"
+        $phongalbedotint			"1"
+         $selfillum 1
+}
