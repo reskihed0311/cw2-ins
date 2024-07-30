@@ -26,8 +26,8 @@ if CLIENT then
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "smallshell"
 	
-	SWEP.IronsightPos = Vector(-3.392, -2.692, 1.12)
-	SWEP.IronsightAng = Vector(0, 0, 0)
+	SWEP.IronsightPos = Vector(-3.401, -6.353, 1.2)
+	SWEP.IronsightAng = Vector(-1.535, 0, 0)
 
 	
 	SWEP.AlternativePos = Vector(0, 0, -1)
