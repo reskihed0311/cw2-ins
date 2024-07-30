@@ -45,7 +45,7 @@ if CLIENT then
 	
 end
 
-SWEP.MuzzleVelocity = 880 -- in meter/s
+SWEP.MuzzleVelocity = 200-- in meter/s
 
 
 
@@ -152,7 +152,7 @@ SWEP.Primary.Ammo			= "9x19MM"
 SWEP.FireDelay = 60 / 800
 SWEP.FireSound = "TOKOS_MP5K_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_MP5K_FIRE_SUPPRESSED"
-SWEP.Recoil = 0.45
+SWEP.Recoil = 0.65
 
 
 SWEP.AimMobilitySpreadMod = 0.1
