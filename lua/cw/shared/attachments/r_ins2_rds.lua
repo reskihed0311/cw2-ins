@@ -8,7 +8,7 @@ att.isSight = true
 
 
 if CLIENT then
-	att.displayIcon = surface.GetTextureID("vgui/atts/r_corioenforcer")
+	att.displayIcon = surface.GetTextureID("vgui/atticons/aimpoint")
 	att.description = {[1] = {t = "A bulky reliable sight.", c = CustomizableWeaponry.textColors.POSITIVE}}
 	
 	att.reticle = "models/r_shared/rets/aimpoint_reticule"

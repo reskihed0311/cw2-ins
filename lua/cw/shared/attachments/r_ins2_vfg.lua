@@ -28,7 +28,7 @@ end
 
 
 if CLIENT then
-	att.displayIcon = surface.GetTextureID("vgui/atts/r_bruentiltgrip")
+	att.displayIcon = surface.GetTextureID("vgui/atticons/foregrip_sec")
 end
 
 CustomizableWeaponry:registerAttachment(att)

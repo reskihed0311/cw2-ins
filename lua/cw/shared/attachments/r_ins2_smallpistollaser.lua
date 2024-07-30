@@ -15,7 +15,7 @@ MaxSpreadIncMult = -0.25}
 att.SpeedDec = -5
 
 if CLIENT then
-	att.displayIcon = surface.GetTextureID("vgui/atts/r_ftacgrimline")
+	att.displayIcon = surface.GetTextureID("vgui/atticons/smollaser")
 	att.description = {}
 	local beam = Material("cw2/reticles/aim_reticule")
 	local laserDot = Material("cw2/reticles/aim_reticule")

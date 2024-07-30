@@ -7,7 +7,7 @@ att.isBG = true
 
 
 if CLIENT then
-	att.displayIcon = surface.GetTextureID("vgui/atts/r_removefs")
+	att.displayIcon = surface.GetTextureID("vgui/atticons/nofs")
 	att.description = {[1] = {t = "Remove those frontsights.", c = CustomizableWeaponry.textColors.REGULAR}}
 end
 
