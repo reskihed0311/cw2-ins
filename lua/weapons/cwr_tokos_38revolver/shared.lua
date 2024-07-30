@@ -13,8 +13,8 @@ if CLIENT then
 	SWEP.CSMuzzleFlashes = true
 	SWEP.ViewModelMovementScale = 1.15
 	
-	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_mwii_mike4")
-	killicon.Add( "cwr_mwii_mike4", "vgui/entities/cwr_mwii_mike4", Color(255, 0, 0, 0))
+	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_38revolver")
+	killicon.Add( "cwr_tokos_38revolver", "vgui/entities/cwr_tokos_38revolver", Color(255, 0, 0, 0))
 	
 	SWEP.MuzzleEffect = "muzzleflash_pistol"
 	SWEP.PosBasedMuz = false
@@ -113,10 +113,10 @@ SWEP.Sounds = {
 
 SWEP.SpeedDec = 0
 
-SWEP.Slot = 2
+SWEP.Slot = 1
 SWEP.SlotPos = 0
-SWEP.NormalHoldType = "ar2"
-SWEP.RunHoldType = "passive"
+SWEP.NormalHoldType = "revolver"
+SWEP.RunHoldType = "all"
 SWEP.FireModes = {"semi"}
 SWEP.Base = "cw_base"
 SWEP.Category = "[CW 2.0] Tokoyami's"
