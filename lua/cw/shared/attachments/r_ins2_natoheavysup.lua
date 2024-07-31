@@ -1,7 +1,7 @@
 local att = {}
 att.name = "natoheavysup"
-att.displayName = "NATO Light Suppresor"
-att.displayNameShort = "SUPP. LITE"
+att.displayName = "NATO Heavy Suppresor"
+att.displayNameShort = "SUPP. HEAVY"
 att.isSuppressor = true
 att.SpeedDec = 1
 
