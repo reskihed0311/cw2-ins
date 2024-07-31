@@ -157,7 +157,7 @@ SWEP.Primary.Ammo			= "9x19MM"
 SWEP.FireDelay = 60 / 450
 SWEP.FireSound = "TOKOS_M9_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M9_FIRE_SUPPRESSED"
-SWEP.Recoil = 0.45
+SWEP.Recoil = 1.5
 
 
 SWEP.AimMobilitySpreadMod = 0.1
@@ -170,7 +170,7 @@ SWEP.MaxSpreadInc = 0.010
 SWEP.SpreadPerShot = 0.001
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
-SWEP.Damage = 45
+SWEP.Damage = 40
 SWEP.DeployTime = 0.2
 
 SWEP.ReloadSpeed = 1
