@@ -19,8 +19,6 @@ if CLIENT then
 	SWEP.ShellScale = 0.5
 	SWEP.ShellOffsetMul = 0
 	SWEP.ShellPosOffset = {x = 0, y = 0, z = 0}
-	SWEP.ForeGripOffsetCycle_Reload = 0.65
-	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "smallshell"
 	
 	SWEP.IronsightPos = Vector(-2.945, -5.611, 0.639)
@@ -33,6 +31,10 @@ if CLIENT then
 
 	SWEP.M4Pos = Vector(-2.961, -5.362, -0.401)
     SWEP.M4Ang = Vector(0, 0, 0)
+
+	SWEP.RKOBRAPos = Vector(-2.961, -5.362, -0.23)
+    SWEP.RKOBRAAng = Vector(0, 0, 0)
+
 	SWEP.SightWithRail = true
 
 	
@@ -42,6 +44,7 @@ if CLIENT then
          ["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_mp5.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.991, 0.407), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
       	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -3.488, 0.246), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["nato_pistolsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/r_pistol_suppresor.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.448, 8.399), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -3.488, 0.246), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 
@@ -59,7 +62,7 @@ SWEP.MuzzleVelocity = 200-- in meter/s
 
 
 SWEP.Attachments = {
-	{header = "Optic ", offset = {450, -250}, atts = {"rdsc"}},
+	{header = "Optic ", offset = {450, -250}, atts = {"rdsc", "rkobra"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
    ["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
 }
@@ -93,7 +96,7 @@ end //*/
 
 SWEP.Animations = {
 
-    idle = "idle"
+    idle = "idle",
 	fire = "fire",
 	inspect = "inspect",
 	fire_aim = "fire_iron",
@@ -172,13 +175,13 @@ SWEP.SpreadPerShot = 0.001
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
 SWEP.Damage = 29
-SWEP.DeployTime = 0
 
 SWEP.ReloadSpeed = 1
 SWEP.ReloadTime = 2.5
 SWEP.ReloadHalt = 2.5
-SWEP.ReloadTime_Empty = 3
-SWEP.ReloadHalt_Empty = 3
+SWEP.ReloadTime_Empty = 3.5
+SWEP.ReloadHalt_Empty = 3.5
+SWEP.DeployTime = 0.6
 
 SWEP.SnapToIdlePostReload = false
 

@@ -33,6 +33,10 @@ if CLIENT then
 
 	SWEP.M4Pos = Vector(-3.201, -5, 0.28)
     SWEP.M4Ang = Vector(0, 0, 0)
+
+	SWEP.RKOBRAPos = Vector(-3.201, -5, 0.40)
+    SWEP.RKOBRAAng = Vector(0, 0, 0)
+
 	SWEP.SightWithRail = true
 
 	
@@ -43,7 +47,8 @@ if CLIENT then
 ["laserband"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/12g_laserband.mdl", bone = "weapon", rel = "", pos = Vector(1.039, -1.04, 16.49), angle = Angle(90, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 		["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_7.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, 1.34), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 
 
 	}
@@ -63,7 +68,7 @@ SWEP.MuzzleVelocity = 2500 -- in meter/s
 
 
 SWEP.Attachments = {
-	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc"}},
+	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc" , "rkobra"}},
 	 {header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	 {header = "Tac - Barrel", offset = {200, -100}, atts = {"laserband"}},
 	["+reload"] = {header = "Ammo", offset = {300, 500}, atts = {"am_magnum", "am_matchgrade"}},

@@ -13,7 +13,7 @@ DamageMult = -0.05,
 }
 
 if CLIENT then
-	att.displayIcon = surface.GetTextureID("vgui/atticons/12gcan")
+	att.displayIcon = surface.GetTextureID("vgui/atticons/nato_lightsup")
 	att.description = {[1] = {t = "Light , mutlicaliber suppresor for NATO calibers.", c = CustomizableWeaponry.textColors.NEUTRAL}}
 end
 

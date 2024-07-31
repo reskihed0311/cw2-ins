@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/atticons/rkobra"
+	"$translucent" 1
+}

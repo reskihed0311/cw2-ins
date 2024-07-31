@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/atticons/nato_heavysup"
+	"$translucent" 1
+}
