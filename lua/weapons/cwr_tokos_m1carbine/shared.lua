@@ -29,12 +29,19 @@ if CLIENT then
 	
 	SWEP.AlternativePos = Vector(-0.5, -1, 0)
 	SWEP.AlternativeAng = Vector(0, 0, -3)
+
+	SWEP.M4Pos = Vector(-3.12, -8.509, 0.4)
+	SWEP.M4Ang = Vector (0 ,0 ,0)
 	
 
 	
-
+    SWEP.SightWithRail = true
 	
 	SWEP.AttachmentModelsVM = {
+
+		["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_7.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.243, 8.465), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.316, 7.109), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+
 
 	}
 
@@ -53,7 +60,8 @@ SWEP.MuzzleVelocity = 1500 -- in meter/s
 
 
 SWEP.Attachments = {
-	["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
+	{header = "Upper Rail", offset = {350, 0}, atts = {"rdsc"}},
+	["+reload"] = {header = "Ammo", offset = {350, 650}, atts = {"am_magnum", "am_matchgrade"}},
 }
 	
 

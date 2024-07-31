@@ -21,16 +21,22 @@ if CLIENT then
 	SWEP.ShellDelay = 0.3
     SWEP.SnapToIdlePostReload = false
 	 
-	
+	SWEP.SightWithRail = true
 
 	SWEP.AttachmentModelsVM = {
 
+["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_7.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.813, -2.349), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.943, -2.774), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
         ["laserband"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/12g_laserband.mdl", bone = "weapon", rel = "", pos = Vector(1.123, -0.109, 12.487), angle = Angle(90, 90, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 		["12g_suppresor"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/12g_can.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.528, 22.047), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 
 
 	}
+
+
+	SWEP.M4Pos = Vector(-3.161, -4.84, 0.168)
+	SWEP.M4Ang = Vector(0, 0, 0)
 
 	
 end
@@ -74,6 +80,7 @@ SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
 
 
 SWEP.Attachments = {
+	{header = "Upper Rail", offset = {750, -50}, atts = {"rdsc"}},
 	{header = "Muzzle Device", offset = {-200, 300}, atts = {"12g_suppresor"}},
 	{header = "Muzzle Tactical Device", offset = {0, 0}, atts = {"laserband"}},
 	["+reload"] = {header = "Ammo", offset = {450, 500}, atts = {"am_slugrounds", "am_flechetterounds"}},

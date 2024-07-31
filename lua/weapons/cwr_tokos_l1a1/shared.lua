@@ -23,7 +23,7 @@ if CLIENT then
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "rifleshell"
 	
-	SWEP.IronsightPos = Vector(-3.224, -4.933, 1.325)
+	SWEP.IronsightPos = Vector(-3.22, -4.933, 1.325)
 	SWEP.IronsightAng = Vector(-0.417, 0, 0)
 
 	
@@ -31,10 +31,18 @@ if CLIENT then
 	SWEP.AlternativeAng = Vector(0, 0, -3)
 	
 
-	
+	SWEP.M4Pos = Vector(-3.201, -5, 0.28)
+    SWEP.M4Ang = Vector(0, 0, 0)
+	SWEP.SightWithRail = true
 
 	
 	SWEP.AttachmentModelsVM = {
+
+["laserband"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/12g_laserband.mdl", bone = "weapon", rel = "", pos = Vector(1.039, -1.04, 16.49), angle = Angle(90, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+
+		["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_7.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, 1.34), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+
 
 	}
 
@@ -44,7 +52,7 @@ if CLIENT then
 	
 end
 
-SWEP.MuzzleVelocity = 1500 -- in meter/s
+SWEP.MuzzleVelocity = 2500 -- in meter/s
 
 
 
@@ -53,9 +61,14 @@ SWEP.MuzzleVelocity = 1500 -- in meter/s
 
 
 SWEP.Attachments = {
-	["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
+	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc"}},
+	 {header = "Tac - Barrel", offset = {200, -100}, atts = {"laserband"}},
+	["+reload"] = {header = "Ammo", offset = {300, 500}, atts = {"am_magnum", "am_matchgrade"}},
 }
 	
+
+SWEP.LaserBandPosAdjust = Vector(0, 0, -1)
+SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
 
 SWEP.LuaViewmodelRecoil = true
 SWEP.LuaViewmodelRecoilOverride = true
