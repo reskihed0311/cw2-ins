@@ -164,7 +164,7 @@ SWEP.Primary.Ammo			= "12 Gauge"
 SWEP.FireDelay = 60 / 50
 SWEP.FireSound = "TOKOS_M40_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M40_FIRE_SUPPRESSED"
-SWEP.Recoil = 8
+SWEP.Recoil = 2
 
 SWEP.HipSpread = 0.50
 SWEP.AimSpread = 0.0001
