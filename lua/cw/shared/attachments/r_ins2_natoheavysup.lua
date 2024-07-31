@@ -8,8 +8,8 @@ att.SpeedDec = 1
 att.statModifiers = {
 
 	OverallMouseSensMult = -0.15,
-RecoilMult = -0.50,
-DamageMult = -0.15,
+RecoilMult = -0.35,
+DamageMult = -0.20,
 }
 
 if CLIENT then

@@ -37,6 +37,8 @@ if CLIENT then
 
 	
 	SWEP.AttachmentModelsVM = {
+		["natoheavysup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_heavysup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.1, 22), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+["natolightsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_lightsup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.1, 22), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 ["laserband"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/12g_laserband.mdl", bone = "weapon", rel = "", pos = Vector(1.039, -1.04, 16.49), angle = Angle(90, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
@@ -62,6 +64,7 @@ SWEP.MuzzleVelocity = 2500 -- in meter/s
 
 SWEP.Attachments = {
 	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc"}},
+	 {header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	 {header = "Tac - Barrel", offset = {200, -100}, atts = {"laserband"}},
 	["+reload"] = {header = "Ammo", offset = {300, 500}, atts = {"am_magnum", "am_matchgrade"}},
 }
@@ -159,8 +162,8 @@ SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "7.62x39MM"
 
 SWEP.FireDelay = 60 / 350
-SWEP.FireSound = "TOKOS_M1CAR_FIRE"
-SWEP.FireSoundSuppressed = "TOKOS_M1CAR_FIRE_SUPPRESSED"
+SWEP.FireSound = "TOKOS_FAL_FIRE"
+SWEP.FireSoundSuppressed = "TOKOS_FAL_FIRE_SUPPRESSED"
 SWEP.Recoil = 2.5
 
 

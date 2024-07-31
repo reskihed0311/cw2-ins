@@ -39,6 +39,10 @@ if CLIENT then
 	
 	SWEP.AttachmentModelsVM = {
 
+	["natoheavysup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_heavysup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.5, 21), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+["natolightsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_lightsup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.5, 21), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+["laserband"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/12g_laserband.mdl", bone = "weapon", rel = "", pos = Vector(1.11, -1.359, 14.751), angle = Angle(90, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+
 		["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_7.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.243, 8.465), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.316, 7.109), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 
@@ -54,13 +58,16 @@ end
 SWEP.MuzzleVelocity = 1500 -- in meter/s
 
 
-
+SWEP.LaserBandPosAdjust = Vector(0, 0, -1)
+SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
 
 
 
 
 SWEP.Attachments = {
 	{header = "Upper Rail", offset = {350, 0}, atts = {"rdsc"}},
+	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
+	{header = "Barrel Tactical", offset = {0, 350}, atts = {"laserband"}},
 	["+reload"] = {header = "Ammo", offset = {350, 650}, atts = {"am_magnum", "am_matchgrade"}},
 }
 	
