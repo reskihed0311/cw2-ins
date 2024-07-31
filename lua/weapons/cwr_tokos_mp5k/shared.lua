@@ -93,6 +93,7 @@ end //*/
 
 SWEP.Animations = {
 
+    idle = "idle"
 	fire = "fire",
 	inspect = "inspect",
 	fire_aim = "fire_iron",
