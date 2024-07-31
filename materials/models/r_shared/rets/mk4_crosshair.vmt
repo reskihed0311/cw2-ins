@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"models\r_shared\rets\mk4_crosshair"
+	"$translucent" 	"1"
+}

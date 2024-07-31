@@ -19,7 +19,7 @@ if CLIENT then
 	SWEP.ShellScale = 0.5
 	SWEP.ShellOffsetMul = 0
 	SWEP.ShellPosOffset = {x = 0, y = 0, z = 0}
-	SWEP.ForeGripOffsetCycle_Reload = 0.65
+	SWEP.ForeGripOffsetCycle_Reload = 0.8
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "rifleshell"
 	
@@ -34,13 +34,38 @@ if CLIENT then
 	SWEP.M4Pos = Vector(-3.201, -5, 0.28)
     SWEP.M4Ang = Vector(0, 0, 0)
 
+	SWEP.MX4Pos = Vector(-3.201, -5, 0.65)
+    SWEP.MX4Ang = Vector(0, 0, 0)
+
 	SWEP.RKOBRAPos = Vector(-3.201, -5, 0.40)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
 
 	SWEP.SightWithRail = true
 
+
+	SWEP.ForegripOverridePos = {
+
+		["default"] = {},
+
+		["vfg"] = {
+
+			["ValveBiped.Bip01_L_Finger2"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, -57, 0) },
+	["ValveBiped.Bip01_L_Finger1"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(-7.172, -81.171, 0) },
+	["ValveBiped.Bip01_L_Finger02"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 79.392, 0) },
+	["ValveBiped.Bip01_L_Finger01"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(0, 53.869, 0) },
+	["ValveBiped.Bip01_L_Clavicle"] = { scale = Vector(1, 1, 1), pos = Vector(-2.112, 0.143, -1.048), angle = Angle(0, 0, 0) },
+	["ValveBiped.Bip01_L_Hand"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(-33.938, 6.645, 55.721) },
+	["ValveBiped.Bip01_L_Finger0"] = { scale = Vector(1, 1, 1), pos = Vector(0, 0, 0), angle = Angle(17.184, 0, 0) }
+
+		
+		
+
+		},
+}
+
 	
 	SWEP.AttachmentModelsVM = {
+		["sec_vfg"] = { type = "Model", model = "models/tokos_weaponry/shared/grips/a_foregrip_sec.mdl", bone = "weapon", rel = "", pos = Vector(0, -0.636, 10.168), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["natoheavysup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_heavysup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.1, 22), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 ["natolightsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_lightsup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.1, 22), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
@@ -48,8 +73,8 @@ if CLIENT then
 
 		["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_7.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, 1.34), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-	["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
-
+	["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["mx4"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/mx4.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.4, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 	}
 
@@ -68,8 +93,9 @@ SWEP.MuzzleVelocity = 2500 -- in meter/s
 
 
 SWEP.Attachments = {
-	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc" , "rkobra"}},
+	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc" , "rkobra", "mx4"}},
 	 {header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
+	 {header = "Lower", offset = {0, 350}, atts = {"sec_vfg"}},
 	 {header = "Tac - Barrel", offset = {200, -100}, atts = {"laserband"}},
 	["+reload"] = {header = "Ammo", offset = {300, 500}, atts = {"am_magnum", "am_matchgrade"}},
 }
