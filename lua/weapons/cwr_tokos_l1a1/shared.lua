@@ -6,14 +6,14 @@ include("sh_sounds.lua")
 if CLIENT then
 	SWEP.UseHands = true
 	SWEP.DrawCrosshair = false
-	SWEP.PrintName = "M1 Carbine"
+	SWEP.PrintName = "L1A1"
 	SWEP.CSMuzzleFlashes = true
 	SWEP.ViewModelMovementScale = 1.15
 	
-	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_m1carbine")
-	killicon.Add( "cwr_tokos_m1carbine", "vgui/entities/cwr_tokos_m1carbine", Color(255, 0, 0, 0))
+	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_l1a1")
+	killicon.Add( "cwr_tokos_l1a1", "vgui/entities/cwr_tokos_l1a1", Color(255, 0, 0, 0))
 	
-	SWEP.MuzzleEffect = "muzzleflash_pistol"
+	SWEP.MuzzleEffect = "muzzleflash_m14"
 	SWEP.PosBasedMuz = false
 	SWEP.SnapToGrip = true
 	SWEP.ShellScale = 0.5
@@ -23,8 +23,8 @@ if CLIENT then
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "rifleshell"
 	
-	SWEP.IronsightPos = Vector(-3.11, -2.816, 1.08)
-	SWEP.IronsightAng = Vector(1.123, 0, 0)
+	SWEP.IronsightPos = Vector(-3.224, -4.933, 1.325)
+	SWEP.IronsightAng = Vector(-0.417, 0, 0)
 
 	
 	SWEP.AlternativePos = Vector(-0.5, -1, 0)
@@ -86,6 +86,8 @@ end //*/
 SWEP.Animations = {
 
 	fire = "fire",
+	fire_last = "fire_empty",
+	fire_aim_last = "fire_empty",
 	inspect = "inspect",
 	fire_aim = "fire_iron",
 	reload = "reload",
@@ -96,21 +98,20 @@ SWEP.Animations = {
 SWEP.Sounds = {
 
 	reload = {
-		{time = 0.38, sound = "weapons/tokos/weapons/m1carbine/m1a1_magout.wav"},
-		{time = 1.60, sound = "weapons/tokos/weapons/m1carbine/m1a1_magin.wav"},
+		{time = 0.70, sound = "weapons/tokos/weapons/fal/fnfal_magout.wav"},
+		{time = 1.51, sound = "weapons/tokos/weapons/fal/fnfal_magin.wav"},
 	},
 
 	reload_empty = {
-		{time = 0.38, sound = "weapons/tokos/weapons/m1carbine/m1a1_magout.wav"},
-		{time = 1.60, sound = "weapons/tokos/weapons/m1carbine/m1a1_magin.wav"},
-		{time = 2.2, sound = "weapons/tokos/weapons/m1carbine/m1a1_boltback.wav"},
-		{time = 2.45, sound = "weapons/tokos/weapons/m1carbine/m1a1_boltrelease.wav"},
+		{time = 0.40, sound = "weapons/tokos/weapons/fal/fnfal_magout.wav"},
+		{time = 1.8, sound = "weapons/tokos/weapons/fal/fnfal_magin.wav"},
+		{time = 2.48, sound = "weapons/tokos/weapons/fal/fnfal_boltrelease.wav"},
 	},
 
 	inspect = {
 
-		{time = 3.9, sound = "weapons/tokos/weapons/m1carbine/m1a1_magout.wav"},
-		{time = 5.35, sound = "weapons/tokos/weapons/m1carbine/m1a1_magin.wav"},
+		{time = 2.99, sound = "weapons/tokos/weapons/fal/fnfal_boltback.wav"},
+		{time = 4, sound = "weapons/tokos/weapons/fal/fnfal_boltrelease.wav"},
 
 
 	}
@@ -118,7 +119,7 @@ SWEP.Sounds = {
 
 SWEP.SpeedDec = 0
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 SWEP.SlotPos = 0
 SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"
@@ -133,21 +134,21 @@ SWEP.Instructions	= ""
 
 SWEP.ViewModelFOV	= 70
 SWEP.ViewModelFlip	= false
-SWEP.ViewModel		= "models/tokos_weaponry/m1carbine/tokos_m1carbine.mdl"
+SWEP.ViewModel		= "models/tokos_weaponry/l1a1/tokos_l1a1.mdl"
 SWEP.WorldModel		= "models/weapons/w_rif_m4a1.mdl"
 
 SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
-SWEP.Primary.ClipSize		= 15
+SWEP.Primary.ClipSize		= 20
 SWEP.Primary.DefaultClip	= 5000
 SWEP.Primary.Automatic		= false
-SWEP.Primary.Ammo			= "9x19MM"
+SWEP.Primary.Ammo			= "7.62x39MM"
 
-SWEP.FireDelay = 60 / 450
+SWEP.FireDelay = 60 / 350
 SWEP.FireSound = "TOKOS_M1CAR_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M1CAR_FIRE_SUPPRESSED"
-SWEP.Recoil = 3
+SWEP.Recoil = 2.5
 
 
 SWEP.AimMobilitySpreadMod = 0.1
@@ -160,7 +161,7 @@ SWEP.MaxSpreadInc = 0.020
 SWEP.SpreadPerShot = 0.005
 SWEP.SpreadCooldown = 0.10
 SWEP.Shots = 1
-SWEP.Damage = 42
+SWEP.Damage = 48
 SWEP.DeployTime = 0.2
 
 SWEP.ReloadSpeed = 1
