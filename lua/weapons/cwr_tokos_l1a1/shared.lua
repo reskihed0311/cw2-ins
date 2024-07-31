@@ -97,16 +97,20 @@ SWEP.Sounds = {
 
 	reload = {
 		{time = 0.38, sound = "weapons/tokos/weapons/m1carbine/m1a1_magout.wav"},
+		{time = 1.60, sound = "weapons/tokos/weapons/m1carbine/m1a1_magin.wav"},
 	},
 
 	reload_empty = {
 		{time = 0.38, sound = "weapons/tokos/weapons/m1carbine/m1a1_magout.wav"},
-	
+		{time = 1.60, sound = "weapons/tokos/weapons/m1carbine/m1a1_magin.wav"},
+		{time = 2.2, sound = "weapons/tokos/weapons/m1carbine/m1a1_boltback.wav"},
+		{time = 2.45, sound = "weapons/tokos/weapons/m1carbine/m1a1_boltrelease.wav"},
 	},
 
 	inspect = {
 
-		
+		{time = 3.9, sound = "weapons/tokos/weapons/m1carbine/m1a1_magout.wav"},
+		{time = 5.35, sound = "weapons/tokos/weapons/m1carbine/m1a1_magin.wav"},
 
 
 	}
@@ -129,18 +133,18 @@ SWEP.Instructions	= ""
 
 SWEP.ViewModelFOV	= 70
 SWEP.ViewModelFlip	= false
-SWEP.ViewModel		= "models/tokos_weaponry/l1a1/tokos_l1a1.mdl"
+SWEP.ViewModel		= "models/tokos_weaponry/m1carbine/tokos_m1carbine.mdl"
 SWEP.WorldModel		= "models/weapons/w_rif_m4a1.mdl"
 
 SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
-SWEP.Primary.ClipSize		= 20
+SWEP.Primary.ClipSize		= 15
 SWEP.Primary.DefaultClip	= 5000
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "9x19MM"
 
-SWEP.FireDelay = 60 / 350
+SWEP.FireDelay = 60 / 450
 SWEP.FireSound = "TOKOS_M1CAR_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M1CAR_FIRE_SUPPRESSED"
 SWEP.Recoil = 3
@@ -149,14 +153,14 @@ SWEP.Recoil = 3
 SWEP.AimMobilitySpreadMod = 0.1
 SWEP.VelocitySensitivity = 0.5
 
-SWEP.HipSpread = 1
+SWEP.HipSpread = 0.50
 SWEP.AimSpread = 0.001
 SWEP.VelocitySensitivity = 1
-SWEP.MaxSpreadInc = 0.070
+SWEP.MaxSpreadInc = 0.020
 SWEP.SpreadPerShot = 0.005
 SWEP.SpreadCooldown = 0.10
 SWEP.Shots = 1
-SWEP.Damage = 48
+SWEP.Damage = 42
 SWEP.DeployTime = 0.2
 
 SWEP.ReloadSpeed = 1
