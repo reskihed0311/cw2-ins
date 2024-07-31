@@ -228,7 +228,7 @@ function SWEP:Think()
         local _, sequenceTime = self.CW_VM:LookupSequence( self.Animations[self.InspectAnim] )
         self.InspectTime = CurTime() + sequenceTime
 
-		timer.Simple(self:SequenceDuration(self:LookupSequence(self.InspectAnim)) - 1.9, function()
+		timer.Simple(self:SequenceDuration(self:LookupSequence(self.InspectAnim)) - 0, function()
 			self.ForegripParent = prevForegrip
 		  end)
     end
