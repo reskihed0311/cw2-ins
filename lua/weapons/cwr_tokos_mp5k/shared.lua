@@ -31,11 +31,16 @@ if CLIENT then
 	SWEP.AlternativeAng = Vector(0, 0, -3)
 	
 
-	
+	SWEP.M4Pos = Vector(-2.961, -5.362, -0.401)
+    SWEP.M4Ang = Vector(0, 0, 0)
+	SWEP.SightWithRail = true
 
 	
 	SWEP.AttachmentModelsVM = {
 
+		
+         ["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_mp5.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.991, 0.407), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+      	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -3.488, 0.246), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["nato_pistolsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/r_pistol_suppresor.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.448, 8.399), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
@@ -53,8 +58,8 @@ SWEP.MuzzleVelocity = 200-- in meter/s
 
 
 
-
 SWEP.Attachments = {
+	{header = "Optic ", offset = {450, -250}, atts = {"rdsc"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
    ["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
 }

@@ -23,7 +23,14 @@ if CLIENT then
 	 
 	
 
-	SWEP.AttachmentModelsVM = {}
+	SWEP.AttachmentModelsVM = {
+
+        ["laserband"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/12g_laserband.mdl", bone = "weapon", rel = "", pos = Vector(1.123, -0.109, 12.487), angle = Angle(90, 90, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+
+		["12g_suppresor"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/12g_can.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.528, 22.047), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+
+
+	}
 
 	
 end
@@ -62,9 +69,15 @@ SWEP.IronsightAng = Vector(0, 0, 0)
 
 
 
+SWEP.LaserBandPosAdjust = Vector(0, 0, -1)
+SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
+
 
 SWEP.Attachments = {
-	["+reload"] = {header = "Ammo", offset = {-200, 300}, atts = {"am_slugrounds", "am_flechetterounds"}}}
+	{header = "Muzzle Device", offset = {-200, 300}, atts = {"12g_suppresor"}},
+	{header = "Muzzle Tactical Device", offset = {0, 0}, atts = {"laserband"}},
+	["+reload"] = {header = "Ammo", offset = {450, 500}, atts = {"am_slugrounds", "am_flechetterounds"}},
+}
 
 
 
@@ -157,7 +170,7 @@ SWEP.Damage = 9
 SWEP.DeployTime = 0.8
 SWEP.ReloadStartTime_Empty = 2
 SWEP.ReloadStartTime = 0.3
-SWEP.InsertShellTime = 0.5
+SWEP.InsertShellTime = 0.65
 SWEP.ReloadFinishWait = 1
 SWEP.PumpMidReloadWait = 0.6
 SWEP.ShotgunReload = true

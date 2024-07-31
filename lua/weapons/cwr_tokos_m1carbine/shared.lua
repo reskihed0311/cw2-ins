@@ -10,8 +10,8 @@ if CLIENT then
 	SWEP.CSMuzzleFlashes = true
 	SWEP.ViewModelMovementScale = 1.15
 	
-	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_m9")
-	killicon.Add( "cwr_tokos_m9", "vgui/entities/cwr_tokos_m9", Color(255, 0, 0, 0))
+	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_m1carbine")
+	killicon.Add( "cwr_tokos_m1carbine", "vgui/entities/cwr_tokos_m1carbine", Color(255, 0, 0, 0))
 	
 	SWEP.MuzzleEffect = "muzzleflash_pistol"
 	SWEP.PosBasedMuz = false
@@ -118,7 +118,7 @@ SWEP.Sounds = {
 
 SWEP.SpeedDec = 0
 
-SWEP.Slot = 1
+SWEP.Slot = 2
 SWEP.SlotPos = 0
 SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"

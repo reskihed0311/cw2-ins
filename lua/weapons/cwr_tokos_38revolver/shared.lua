@@ -102,6 +102,10 @@ SWEP.Sounds = {
 		{time = 2.7, sound = "weapons/tokos/weapons/38rev/revolver_close_chamber.wav"},
 	},
 
+	draw = {
+		{time = 0, sound = "weapons/tokos/shared/whoosh.wav"},
+	},
+
 	inspect = {
 
 		{time = 2.7, sound = "weapons/tokos/weapons/38rev/revolver_open_chamber.wav"},
