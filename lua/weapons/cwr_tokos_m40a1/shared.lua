@@ -106,14 +106,14 @@ SWEP.Attachments = {
         fire = {
             {time = 0.35, sound = "M40_BOLTUP"},
             {time = 0.50, sound = "M40_BOLTBACK"},
-			{time = 0.75, sound = "weapons/tokos/weapons/m40a1/m40a1_boltforward.wav"},
-			{time = 0.95, sound = "weapons/tokos/weapons/m40a1/m40a1_boltrelease.wav"},
+			{time = 0.85, sound = "weapons/tokos/weapons/m40a1/m40a1_boltforward.wav"},
+			{time = 1, sound = "weapons/tokos/weapons/m40a1/m40a1_boltrelease.wav"},
         },
 		fire_iron = {
 			{time = 0.35, sound = "M40_BOLTUP"},
             {time = 0.50, sound = "M40_BOLTBACK"},
-			{time = 0.75, sound = "weapons/tokos/weapons/m40a1/m40a1_boltforward.wav"},
-			{time = 0.95, sound = "weapons/tokos/weapons/m40a1/m40a1_boltrelease.wav"},
+			{time = 0.85, sound = "weapons/tokos/weapons/m40a1/m40a1_boltforward.wav"},
+			{time = 1, sound = "weapons/tokos/weapons/m40a1/m40a1_boltrelease.wav"},
         },
 
 		shell_loop = {
