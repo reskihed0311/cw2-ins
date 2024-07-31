@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/atticons/eotech"
+	"$translucent" 1
+}
