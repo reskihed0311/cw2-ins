@@ -29,6 +29,7 @@ if CLIENT then
 		["mx4"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/mx4.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.303, 0.202), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.335, -0.308), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.335, -0.308), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.335, -0.308), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 	SWEP.MX4Pos = Vector(-2.448, -3.372, 0.479)
@@ -38,6 +39,9 @@ if CLIENT then
 	SWEP.RKOBRAPos = Vector(-2.421, -5.286, 0.21)
 	SWEP.RKOBRAAng = Vector(0, 0, 0)
 	SWEP.ReticleInactivityPostFire = 1.3
+
+	SWEP.REOTECHPos = Vector(-2.421, -5.286, 0.098)
+	SWEP.REOTECHAng = Vector(0, 0, 0)
 	
 end
 
@@ -80,7 +84,7 @@ SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
 
 
 SWEP.Attachments = {
-	{header = "Optic", offset = {1000, 0}, atts = {"rdsc", "rkobra", "mx4"}},
+	{header = "Optic", offset = {1000, 0}, atts = {"rdsc",  "reotech","rkobra", "mx4"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}},
 }
