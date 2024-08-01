@@ -149,8 +149,8 @@ SWEP.Animations = {
 SWEP.Sounds = {
 
 	reload = {
-		{time = 0.70, sound = "weapons/tokos/weapons/fal/fnfal_magout.wav"},
-		{time = 1.51, sound = "weapons/tokos/weapons/fal/fnfal_magin.wav"},
+		{time = 0.75, sound = "weapons/tokos/weapons/fal/fnfal_magout.wav"},
+		{time = 1.48, sound = "weapons/tokos/weapons/fal/fnfal_magin.wav"},
 	},
 
 	reload_empty = {
@@ -219,9 +219,8 @@ SWEP.DeployTime = 0.2
 SWEP.ReloadSpeed = 1
 SWEP.ReloadTime = 2.2
 SWEP.ReloadHalt = 2.2
-SWEP.ReloadTime_Empty = 2.5
-SWEP.ReloadHalt_Empty = 2.5
-
+SWEP.ReloadTime_Empty = 3
+SWEP.ReloadHalt_Empty = 3
 SWEP.SnapToIdlePostReload = false
 
 
