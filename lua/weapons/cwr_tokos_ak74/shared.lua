@@ -36,7 +36,7 @@ if CLIENT then
 	SWEP.REOTECHPos = Vector(-2.161, -5, -0.45)
     SWEP.REOTECHAng = Vector(0, 0, 0)
 
-	SWEP.RKOBRAPos = Vector(-2.161, -5, -0.)
+	SWEP.RKOBRAPos = Vector(-2.161, -5, -0.3)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
 	SWEP.ForegripOverridePos = {
 
