@@ -88,7 +88,7 @@ SWEP.MuzzleVelocity = 5000-- in meter/s
 SWEP.Attachments = {
 	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
-	{header = "Handguard", offset = {100,150}, atts = {"sec_vfg"}},
+	{header = "Handguard", offset = {-500,150}, atts = {"sec_vfg"}},
    ["+reload"] = {header = "Ammo", offset = {100, 600}, atts = {"am_magnum", "am_matchgrade"}},
 }
    
