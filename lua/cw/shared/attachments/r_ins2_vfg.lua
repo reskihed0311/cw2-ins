@@ -5,13 +5,12 @@ att.displayNameShort = "VFG"
 
 att.statModifiers = {VelocitySensitivityMult = -0.1,
 DrawSpeedMult = -0.1,
-SpreadPerShotMult = -0.1,
+MaxSpreadIncMult = -0.15,
 OverallMouseSensMult = -0.05,
 RecoilMult = -0.05} 
 
 
 
---balance this
 
 function att:attachFunc()
 
