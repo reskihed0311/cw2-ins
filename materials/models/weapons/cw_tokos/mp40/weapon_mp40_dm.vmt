@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\cw_tokos\mp40\weapon_mp40_dm"
+	"$bumpmap" 			"models\weapons\cw_tokos\mp40\weapon_mp40_nm"
+        "$color"			"[1 1 1]"
+
+	"$phong"                        "1"
+	"$phongalbedotint"              "1"
+	"$phongtint"                    "[.6 .8 1]"
+
+	"$phongboost"                   ".2"
+	"$phongexponent"                "40"
+	"$phongfresnelranges"           "[1 2.5 7]"
+
+
+	"$envmap"                       "env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"                   "[0.012 0.012 0.012]"
+}
