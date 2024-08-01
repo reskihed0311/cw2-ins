@@ -106,7 +106,7 @@ SWEP.Animations = {
 	fire_last = "fire_empty",
 	--inspect = "inspect",
 	fire_aim = "fire_iron",
-	fire_last_aim = "fire_emptyzrr",
+	fire_last_aim = "fire_empty",
 	reload = "reload",
 	reload_empty = "reload_empty",
 	draw = "draw",
@@ -163,7 +163,7 @@ SWEP.Primary.Ammo			= "9x19MM"
 SWEP.FireDelay = 60 / 500
 SWEP.FireSound = "TOKOS_MP40_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_MP40_FIRE_SUPPRESSED"
-SWEP.Recoil = 0.9
+SWEP.Recoil = 1.5
 
 
 SWEP.AimMobilitySpreadMod = 0.1
@@ -179,10 +179,10 @@ SWEP.Shots = 1
 SWEP.Damage = 32
 
 SWEP.ReloadSpeed = 1
-SWEP.ReloadTime = 2.5
-SWEP.ReloadHalt = 2.5
-SWEP.ReloadTime_Empty = 3.5
-SWEP.ReloadHalt_Empty = 3.5
+SWEP.ReloadTime = 2.2
+SWEP.ReloadHalt = 2.2
+SWEP.ReloadTime_Empty = 3
+SWEP.ReloadHalt_Empty = 3
 SWEP.DeployTime = 0.6
 
 SWEP.SnapToIdlePostReload = false
