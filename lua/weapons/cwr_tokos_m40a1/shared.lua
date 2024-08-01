@@ -140,9 +140,9 @@ SWEP.SpeedDec = 30
 
 SWEP.Slot = 3
 SWEP.SlotPos = 0
-SWEP.NormalHoldType = "shotgun"
+SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"
-SWEP.FireModes = {"pump"}
+SWEP.FireModes = {"bolt"}
 SWEP.Base = "cw_base"
 SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
 SWEP.SubCategory = "Sniper Rifles"
@@ -156,7 +156,7 @@ SWEP.Instructions	= ""
 SWEP.ViewModelFOV	= 70
 SWEP.ViewModelFlip	= false
 SWEP.ViewModel		= "models/tokos_weaponry/m40a1/tokos_m40a1.mdl"
-SWEP.WorldModel		= "models/weapons/w_shot_m3super90.mdl"
+SWEP.WorldModel		= "models/weapons/w_snip_scout.mdl"
 
 SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
