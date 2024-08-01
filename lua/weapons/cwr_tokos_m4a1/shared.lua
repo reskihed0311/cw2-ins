@@ -126,7 +126,7 @@ function SWEP:fireAnimFunc()
 	end
 	
 	self:sendWeaponAnim(prefix .. "fire" .. suffix, rate, cycle)
-end //*/
+end //
 
 SWEP.Animations = {
 
@@ -195,7 +195,7 @@ SWEP.Primary.DefaultClip	= 5000
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "5.56x45MM"
 
-SWEP.FireDelay = 60 / 900
+SWEP.FireDelay = 60 / 1000
 SWEP.FireSound = "TOKOS_M4A1_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M4A1_FIRE_SUPPRESSED"
 SWEP.Recoil = 0.9
@@ -212,7 +212,7 @@ SWEP.MaxSpreadInc = 0.005
 SWEP.SpreadPerShot = 0.0001
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
-SWEP.Damage = 38
+SWEP.Damage = 35
 SWEP.DeployTime = 0.6
 
 SWEP.ReloadSpeed = 1

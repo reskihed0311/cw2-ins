@@ -123,7 +123,7 @@ function SWEP:fireAnimFunc()
 	end
 	
 	self:sendWeaponAnim(prefix .. "fire" .. suffix, rate, cycle)
-end //*/
+end //
 
 SWEP.Animations = {
 
@@ -184,7 +184,7 @@ SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= ".45 ACP"
 
-SWEP.FireDelay = 60 / 600
+SWEP.FireDelay = 60 / 700
 SWEP.FireSound = "TOKOS_UMP45_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_UMP45_FIRE_SUPPRESSED"
 SWEP.Recoil = 1

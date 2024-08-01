@@ -81,13 +81,14 @@ function SWEP:fireAnimFunc()
 	end
 	
 	self:sendWeaponAnim(prefix .. "fire" .. suffix, rate, cycle)
-end //*/
+end //
 
 SWEP.Animations = {
 
 	fire = "fire",
 	fire_aim = "fire",
-	fire_last_aim = "fire",
+	fire_aim_last = "fire",
+	fire_last = "fire",
 	inspect = "inspect",
 	reload = "reload",
 	draw = "draw",

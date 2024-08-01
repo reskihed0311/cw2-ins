@@ -1,3 +1,5 @@
+AddCSLuaFile()
+
 local cv_enable = CreateClientConVar("cl_cw_subcategories_enabled", "1", true, false, "Enable spawnmenu subcategories? (Update spawnmenu with spawnmenu_reload command after changing this!)")
 
 local function PopulateWeapons(pnlContent, tree, browseNode)
