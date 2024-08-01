@@ -10,6 +10,7 @@ if CLIENT then
 	SWEP.CSMuzzleFlashes = true
 	SWEP.ViewModelMovementScale = 1.15
 	
+	
 	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_ump45")
 	killicon.Add( "cwr_tokos_ump45", "vgui/entities/cwr_tokos_ump45", Color(255, 0, 0, 0))
 	
@@ -156,7 +157,8 @@ SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"
 SWEP.FireModes = {"auto", "semi"}
 SWEP.Base = "cw_base"
-SWEP.Category = "[CW 2.0] Tokoyami's"
+SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
+SWEP.SubCategory = "Sub-Machine Guns"
 
 SWEP.Author			= "reshed"
 SWEP.Contact		= ""

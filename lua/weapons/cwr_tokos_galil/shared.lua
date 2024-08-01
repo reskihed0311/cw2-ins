@@ -172,7 +172,8 @@ SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"
 SWEP.FireModes = {"auto", "semi"}
 SWEP.Base = "cw_base"
-SWEP.Category = "[CW 2.0] Tokoyami's"
+SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
+SWEP.SubCategory = "Assault Rifles"
 
 SWEP.Author			= "reshed"
 SWEP.Contact		= ""

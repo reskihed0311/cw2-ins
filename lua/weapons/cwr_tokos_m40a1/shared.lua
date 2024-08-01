@@ -144,7 +144,8 @@ SWEP.NormalHoldType = "shotgun"
 SWEP.RunHoldType = "passive"
 SWEP.FireModes = {"pump"}
 SWEP.Base = "cw_base"
-SWEP.Category = "[CW 2.0] Tokoyami's"
+SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
+SWEP.SubCategory = "Sniper Rifles"
 SWEP.FireAnimSpeed = 1
 
 SWEP.Author			= "reshed"

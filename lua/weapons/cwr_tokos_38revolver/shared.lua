@@ -123,7 +123,8 @@ SWEP.NormalHoldType = "revolver"
 SWEP.RunHoldType = "all"
 SWEP.FireModes = {"semi"}
 SWEP.Base = "cw_base"
-SWEP.Category = "[CW 2.0] Tokoyami's"
+SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
+SWEP.SubCategory = "Pistols"
 
 SWEP.Author			= "reshed"
 SWEP.Contact		= ""
