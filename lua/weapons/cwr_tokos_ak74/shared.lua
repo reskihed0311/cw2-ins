@@ -62,6 +62,7 @@ if CLIENT then
     SWEP.SightWithRail = true
 	
 	SWEP.AttachmentModelsVM = {
+		["r_pbs1"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/pbs1_can.mdl", bone = "weapon", rel = "", pos = Vector(0, -0.7, 21), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["sec_vfg"] = { type = "Model", model = "models/tokos_weaponry/shared/grips/a_foregrip_sec.mdl", bone = "weapon", rel = "", pos = Vector(0, 0, 9.677), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 			["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_ak.mdl", bone = "weapon", rel = "", pos = Vector(0.634, -1.246, 1.011), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 			["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0.09, -2.587, 0.131), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
@@ -85,6 +86,7 @@ SWEP.MuzzleVelocity = 880 -- in meter/s
 
 SWEP.Attachments = {
 	{header = "Dove Tail", offset = {900, -100}, atts = {"rdsc","reotech", "rkobra"}},
+	{header = "Muzzle", offset = {0, -100}, atts = {"r_pbs1"}},
 	{header = "Lower", offset = {0, 350}, atts = {"sec_vfg"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}}
 }
