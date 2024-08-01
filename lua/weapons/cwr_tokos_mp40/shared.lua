@@ -38,6 +38,12 @@ if CLIENT then
 	SWEP.RKOBRAPos = Vector(-3.26, -2.75, 0.25)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
 
+	SWEP.ELCPos = Vector(-3.26, -2.75, -0.5)
+    SWEP.ELCAng = Vector(0, 0, 0)
+
+	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-3.26, -2.75, -1.85), [2] = Vector(0, 0, 0)}}
+
+
 	SWEP.SightWithRail = true
 
 	
@@ -49,6 +55,7 @@ if CLIENT then
 		["nato_pistolsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/r_pistol_suppresor.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.25, 15), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector (0, -2.264, -2.553), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.264, -3), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.264, -3), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 
@@ -66,7 +73,7 @@ SWEP.MuzzleVelocity = 200-- in meter/s
 
 
 SWEP.Attachments = {
-	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra"}},
+	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "relcan"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
    ["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
 }
@@ -172,15 +179,15 @@ SWEP.VelocitySensitivity = 0.5
 SWEP.HipSpread = 0.05
 SWEP.AimSpread = 0.005
 SWEP.VelocitySensitivity = 1
-SWEP.MaxSpreadInc = 0.010
-SWEP.SpreadPerShot = 0.001
+SWEP.MaxSpreadInc = 0.050
+SWEP.SpreadPerShot = 0.005
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
 SWEP.Damage = 32
 
 SWEP.ReloadSpeed = 1
-SWEP.ReloadTime = 2.2
-SWEP.ReloadHalt = 2.2
+SWEP.ReloadTime = 2.3
+SWEP.ReloadHalt = 2.3
 SWEP.ReloadTime_Empty = 3
 SWEP.ReloadHalt_Empty = 3
 SWEP.DeployTime = 0.6

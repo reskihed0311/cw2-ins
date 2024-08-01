@@ -39,6 +39,11 @@ if CLIENT then
 	SWEP.RKOBRAPos = Vector(-3.12, -8.509, 0.50)
 	SWEP.RKOBRAAng = Vector (0 ,0 ,0)
 
+	SWEP.ELCPos = Vector(-3.12, -8.509, -0.25)
+	SWEP.ELCAng = Vector (0 ,0 ,0)
+
+	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-3.12, -8.509, -1.55), [2] = Vector(0, 0, 0)}}
+
 	
     SWEP.SightWithRail = true
 	
@@ -52,7 +57,7 @@ if CLIENT then
 	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.316, 7.109), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.316, 7.109), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.316, 7.109), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-
+	["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.316, 7.109), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 	}
 
@@ -72,7 +77,7 @@ SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
 
 
 SWEP.Attachments = {
-	{header = "Upper Rail", offset = {350, 0}, atts = {"rdsc",  "reotech","rkobra"}},
+	{header = "Upper Rail", offset = {350, 0}, atts = {"rdsc",  "reotech","rkobra", "relcan"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	{header = "Barrel Tactical", offset = {0, 350}, atts = {"laserband"}},
 	["+reload"] = {header = "Ammo", offset = {350, 650}, atts = {"am_magnum", "am_matchgrade"}},

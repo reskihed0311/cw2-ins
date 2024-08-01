@@ -36,8 +36,14 @@ if CLIENT then
 	SWEP.REOTECHPos = Vector(-2.161, -5, -0.45)
     SWEP.REOTECHAng = Vector(0, 0, 0)
 
+	SWEP.ELCPos = Vector(-2.161, -2, -1.1)
+    SWEP.ELCAng = Vector(0, 0, 0)
+
 	SWEP.RKOBRAPos = Vector(-2.161, -5, -0.3)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
+
+	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.161, -2, -2.4), [2] = Vector(0, 0, 0)}}
+
 	SWEP.ForegripOverridePos = {
 
 		["default"] = {},
@@ -68,6 +74,7 @@ if CLIENT then
 			["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0.09, -2.587, 0.131), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 			["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0.09, -2.587, 0.131), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 			["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0.09, -2.587, 1), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+			["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0.09, -2.587, 1), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		
 	}
 
@@ -85,7 +92,7 @@ SWEP.MuzzleVelocity = 880 -- in meter/s
 
 
 SWEP.Attachments = {
-	{header = "Dove Tail", offset = {900, -100}, atts = {"rdsc","reotech", "rkobra"}},
+	{header = "Dove Tail", offset = {900, -100}, atts = {"rdsc","reotech", "rkobra", "relcan"}},
 	{header = "Muzzle", offset = {0, -100}, atts = {"r_pbs1"}},
 	{header = "Lower", offset = {0, 350}, atts = {"sec_vfg"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}}
