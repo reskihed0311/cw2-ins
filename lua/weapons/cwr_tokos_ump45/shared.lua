@@ -122,6 +122,8 @@ SWEP.Animations = {
 
     idle = "idle",
 	fire = "fire",
+	fire_last = "fire_empty",
+	fire_last_aim = "fire_empty",
 	inspect = "inspect",
 	fire_aim = "fire_iron",
 	reload = "reload",
