@@ -7,15 +7,15 @@ att.FOVModifier = 5
 att.isSight = true
 
 if CLIENT then
-	att.displayIcon = surface.GetTextureID("vgui/atticons/mx4")
+	att.displayIcon = surface.GetTextureID("vgui/atticons/reclan")
 	att.description = {[1] = {t = "Provides 1-4x magnification.", c = CustomizableWeaponry.textColors.POSITIVE},
 	[2] = {t = "For long ranges.", c = CustomizableWeaponry.textColors.NEGATIVE},
 
     }
 	local old, x, y, ang
-	local reticle = surface.GetTextureID("models/r_shared/rets/mk4_crosshair")
+	local reticle = surface.GetTextureID("models/r_shared/rets/elcan_reticule")
 	
-	att.zoomTextures = {{tex = surface.GetTextureID("models/r_shared/rets/mk4_crosshair"), offset = {0, 0}}}
+	att.zoomTextures = {{tex = surface.GetTextureID("models/r_shared/rets/elcan_reticule"), offset = {0, 0}}}
 	
 	att.telescopicsFOVRange = {
 		30,

@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/atticons/reclan"
+	"$translucent" 1
+}
