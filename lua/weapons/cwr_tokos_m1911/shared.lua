@@ -86,7 +86,7 @@ function SWEP:fireAnimFunc()
 	end
 	
 	self:sendWeaponAnim(prefix .. "fire" .. suffix, rate, cycle)
-end //*/
+end //
 
 SWEP.Animations = {
 
@@ -125,7 +125,7 @@ SWEP.SpeedDec = 0
 SWEP.Slot = 1
 SWEP.SlotPos = 0
 SWEP.NormalHoldType = "revolver"
-SWEP.RunHoldType = "all"
+SWEP.RunHoldType = "normal"
 SWEP.FireModes = {"semi"}
 SWEP.Base = "cw_base"
 SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
