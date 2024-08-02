@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "vgui/entities/cwr_tokos_m590"
+	"$translucent" 1
+}

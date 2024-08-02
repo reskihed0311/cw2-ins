@@ -10,7 +10,7 @@ if CLIENT then
 	SWEP.ViewModelMovementScale = 1
 	
     SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_toz")
-	killicon.Add( "cwr_tokos_m4a1", "vgui/entities/cwr_tokos_toz", Color(255, 0, 0, 0))
+	killicon.Add( "cwr_tokos_toz", "vgui/entities/cwr_tokos_toz", Color(255, 0, 0, 0))
 	
 	SWEP.MuzzleEffect = "muzzleflash_m3"
 	SWEP.PosBasedMuz = false
