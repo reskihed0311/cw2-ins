@@ -71,7 +71,7 @@ function SWEP:fireAnimFunc()
 	end
 	
 	self:sendWeaponAnim(prefix .. "fire" .. suffix, rate, cycle)
-end //*/
+end //
 
 
 SWEP.IronsightPos = Vector(-3.149, -4.845, 1.32)
@@ -178,8 +178,8 @@ SWEP.MaxSpreadInc = 0.06
 SWEP.ClumpSpread = 0.03
 SWEP.SpreadPerShot = 0.01
 SWEP.SpreadCooldown = 0.8
-SWEP.Shots = 18
-SWEP.Damage = 9
+SWEP.Shots = 15
+SWEP.Damage = 12
 SWEP.DeployTime = 0.8
 SWEP.ReloadStartTime_Empty = 2
 SWEP.ReloadStartTime = 0.3

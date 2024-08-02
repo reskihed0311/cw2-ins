@@ -147,7 +147,7 @@ SWEP.AdminSpawnable		= true
 SWEP.Primary.ClipSize		= 7
 SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= false
-SWEP.Primary.Ammo			= "9x19MM"
+SWEP.Primary.Ammo			= ".45 ACP"
 
 SWEP.FireDelay = 60 / 450
 SWEP.FireSound = "TOKOS_M1911_FIRE"
@@ -165,7 +165,7 @@ SWEP.MaxSpreadInc = 0.035
 SWEP.SpreadPerShot = 0.005
 SWEP.SpreadCooldown = 0.10
 SWEP.Shots = 1
-SWEP.Damage = 45
+SWEP.Damage = 53
 SWEP.DeployTime = 0.2
 
 SWEP.ReloadSpeed = 1

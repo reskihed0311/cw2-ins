@@ -76,8 +76,7 @@ function SWEP:fireAnimFunc()
 	end
 	
 	self:sendWeaponAnim(prefix .. "fire" .. suffix, rate, cycle)
-end //*/
-
+end //
 
 SWEP.IronsightPos = Vector(-2.441, -2, 1.08)
 SWEP.IronsightAng = Vector(0, 0, 0)
@@ -170,7 +169,7 @@ SWEP.AdminSpawnable		= true
 SWEP.Primary.ClipSize		= 5
 SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= false
-SWEP.Primary.Ammo			= "12 Gauge"
+SWEP.Primary.Ammo			= "7.62x51MM"
 
 SWEP.FireDelay = 60 / 50
 SWEP.FireSound = "TOKOS_M40_FIRE"
