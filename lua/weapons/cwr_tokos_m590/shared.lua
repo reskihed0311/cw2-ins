@@ -156,8 +156,7 @@ SWEP.Primary.ClipSize		= 7
 SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "12 Gauge"
-
-SWEP.FireDelay = 0.7 / 1.65
+SWEP.FireDelay = 60 / 100
 SWEP.FireSound = "TOKOS_M590_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M590_FIRE_SUPPRESSED"
 SWEP.Recoil = 3
