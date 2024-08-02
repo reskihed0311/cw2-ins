@@ -103,7 +103,7 @@ function SWEP:fireAnimFunc()
 	end
 	
 	self:sendWeaponAnim(prefix .. "fire" .. suffix, rate, cycle)
-end //*/
+end //
 
 SWEP.Animations = {
 
@@ -185,7 +185,7 @@ SWEP.MaxSpreadInc = 0.050
 SWEP.SpreadPerShot = 0.005
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
-SWEP.Damage = 32
+SWEP.Damage = 42
 
 SWEP.ReloadSpeed = 1
 SWEP.ReloadTime = 2.3
