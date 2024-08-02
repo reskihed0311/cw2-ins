@@ -178,7 +178,7 @@ SWEP.Primary.Ammo			= ".30-Caliber"
 SWEP.FireDelay = 60 / 450
 SWEP.FireSound = "TOKOS_M1CAR_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M1CAR_FIRE_SUPPRESSED"
-SWEP.Recoil = 3
+SWEP.Recoil = 1.8
 
 
 SWEP.AimMobilitySpreadMod = 0.1
