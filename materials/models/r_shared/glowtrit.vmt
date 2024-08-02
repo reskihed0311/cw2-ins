@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\r_shared\GlowTrit"
+	//"$translucent" 1
+	"$selfillum"1
+	//"$additive"1
+	//"$halflambert" 	"1"
+}

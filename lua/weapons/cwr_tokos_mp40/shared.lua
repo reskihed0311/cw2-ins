@@ -41,6 +41,10 @@ if CLIENT then
 	SWEP.ELCPos = Vector(-3.26, -2.75, -0.5)
     SWEP.ELCAng = Vector(0, 0, 0)
 
+
+	SWEP.RACOGPos = Vector(-3.26, -2.75, -0.22)
+    SWEP.RACOGAng = Vector(0, 0, 0)
+
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-3.26, -2.75, -1.85), [2] = Vector(0, 0, 0)}}
 
 
@@ -56,6 +60,7 @@ if CLIENT then
 		["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector (0, -2.264, -2.553), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.264, -3), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.264, -3), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.264, -3), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 
@@ -73,7 +78,7 @@ SWEP.MuzzleVelocity = 200-- in meter/s
 
 
 SWEP.Attachments = {
-	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "relcan"}},
+	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
    ["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
 }

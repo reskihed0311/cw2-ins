@@ -41,6 +41,11 @@ if CLIENT then
 	SWEP.ELCPos = Vector(-2.961, -5.362, -0.98)
     SWEP.ELCAng = Vector(0, 0, 0)
 
+
+	SWEP.RACOGPos = Vector(-2.961, -5.362, -0.65)
+    SWEP.RACOGAng = Vector(0, 0, 0)
+
+
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.961, -5.362, -2.3), [2] = Vector(0, 0, 0)}}
 
 	SWEP.SightWithRail = true
@@ -55,6 +60,7 @@ if CLIENT then
 		["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -3.488, 0.246), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -3.488, 0.246), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -3.488, 0.5), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -3.488, 0.5), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 
@@ -72,7 +78,7 @@ SWEP.MuzzleVelocity = 200-- in meter/s
 
 
 SWEP.Attachments = {
-	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "relcan"}},
+	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
    ["+reload"] = {header = "Ammo", offset = {0, 300}, atts = {"am_magnum", "am_matchgrade"}},
 }

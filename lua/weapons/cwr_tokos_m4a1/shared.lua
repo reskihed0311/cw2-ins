@@ -43,6 +43,9 @@ if CLIENT then
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.52, -4.776, -1.35), [2] = Vector(0, 0, 0)}}
 
 
+	SWEP.RACOGPos = Vector(-2.52, -4.776, 0.25)
+    SWEP.RACOGAng = Vector(0, 0, 0)
+
 	SWEP.RKOBRAPos = Vector(-2.52, -4.776, 0.68)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
 	
@@ -55,6 +58,7 @@ if CLIENT then
 		["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	
 	}
 
@@ -94,7 +98,7 @@ SWEP.FrontBGs = {main = 2 , regular = 0 , none = 1}
 
 
 SWEP.Attachments = {
-	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc", "reotech","rkobra", "relcan"}},
+	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc", "reotech","rkobra", "racog","relcan"}},
 	{header = "Lower Rail", offset = {0, 350}, atts = {"sec_vfg"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	{header = "FS", offset = {0, -100}, atts = {"nofs"}},
