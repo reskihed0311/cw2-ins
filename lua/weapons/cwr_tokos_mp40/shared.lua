@@ -149,6 +149,8 @@ SWEP.Base = "cw_base"
 SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
 SWEP.SubCategory = "Sub-Machine Guns"
 
+SWEP.Chamberable = false
+
 SWEP.Author			= "reshed"
 SWEP.Contact		= ""
 SWEP.Purpose		= ""
@@ -162,8 +164,8 @@ SWEP.WorldModel		= "models/weapons/w_smg_mp5.mdl"
 SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
-SWEP.Primary.ClipSize		= 30
-SWEP.Primary.DefaultClip	= 5000
+SWEP.Primary.ClipSize		= 32
+SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "9x19MM"
 

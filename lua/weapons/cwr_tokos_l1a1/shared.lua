@@ -198,7 +198,7 @@ SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
 SWEP.Primary.ClipSize		= 20
-SWEP.Primary.DefaultClip	= 5000
+SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "7.62x39MM"
 
@@ -218,7 +218,7 @@ SWEP.MaxSpreadInc = 0.020
 SWEP.SpreadPerShot = 0.005
 SWEP.SpreadCooldown = 0.10
 SWEP.Shots = 1
-SWEP.Damage = 48
+SWEP.Damage = 72
 SWEP.DeployTime = 0.2
 
 SWEP.ReloadSpeed = 1

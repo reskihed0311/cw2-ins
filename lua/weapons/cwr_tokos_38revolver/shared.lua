@@ -26,7 +26,7 @@ if CLIENT then
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "smallshell"
 	
-	SWEP.IronsightPos = Vector(-3.401, -6.353, 1.2)
+	SWEP.IronsightPos = Vector(-3.401, -2.353, 1.2)
 	SWEP.IronsightAng = Vector(-1.535, 0, 0)
 
 	
@@ -121,7 +121,7 @@ SWEP.SpeedDec = 0
 SWEP.Slot = 1
 SWEP.SlotPos = 0
 SWEP.NormalHoldType = "revolver"
-SWEP.RunHoldType = "all"
+SWEP.RunHoldType = "normal"
 SWEP.FireModes = {"semi"}
 SWEP.Base = "cw_base"
 SWEP.Category = "[CW 2.0] Tokoyami's Weaponry"
@@ -141,7 +141,7 @@ SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
 SWEP.Primary.ClipSize		= 6
-SWEP.Primary.DefaultClip	= 5000
+SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= ".38 Special"
 

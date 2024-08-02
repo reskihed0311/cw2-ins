@@ -165,7 +165,7 @@ SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
 SWEP.Primary.ClipSize		= 30
-SWEP.Primary.DefaultClip	= 5000
+SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "9x19MM"
 
@@ -181,8 +181,8 @@ SWEP.VelocitySensitivity = 0.5
 SWEP.HipSpread = 0.10
 SWEP.AimSpread = 0.005
 SWEP.VelocitySensitivity = 1
-SWEP.MaxSpreadInc = 0.010
-SWEP.SpreadPerShot = 0.001
+SWEP.MaxSpreadInc = 0.050
+SWEP.SpreadPerShot = 0.005
 SWEP.SpreadCooldown = 0.05
 SWEP.Shots = 1
 SWEP.Damage = 29

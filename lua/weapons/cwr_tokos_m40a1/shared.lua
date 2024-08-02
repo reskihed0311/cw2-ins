@@ -168,7 +168,7 @@ SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
 SWEP.Primary.ClipSize		= 5
-SWEP.Primary.DefaultClip	= 5
+SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "12 Gauge"
 
@@ -184,7 +184,7 @@ SWEP.MaxSpreadInc = 0.06
 SWEP.SpreadPerShot = 0.01
 SWEP.SpreadCooldown = 0.8
 SWEP.Shots = 1
-SWEP.Damage = 90
+SWEP.Damage = 120
 SWEP.DeployTime = 0.8
 SWEP.ReloadStartTime = 0.8
 SWEP.InsertShellTime = 0.7
