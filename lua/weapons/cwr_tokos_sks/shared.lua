@@ -123,7 +123,8 @@ end //
 SWEP.Animations = {
 
 	fire = "fire",
-	fire_aim_last = "fire_empty",
+	fire_last = "fire",
+	fire_aim_last = "fire",
 	inspect = "inspect",
 	fire_aim = "fire_iron",
 	reload = "reload",
