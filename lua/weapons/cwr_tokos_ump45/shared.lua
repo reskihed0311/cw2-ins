@@ -56,6 +56,7 @@ if CLIENT then
 	
 	SWEP.AttachmentModelsVM = {
 
+["ranpeq"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/a_laser_peq15.mdl", bone = "weapon", rel = "", pos = Vector(-1.354, -0.176, 6.243), angle = Angle(90, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["sec_vfg"] = { type = "Model", model = "models/tokos_weaponry/shared/grips/a_foregrip_sec.mdl", bone = "weapon", rel = "", pos = Vector(0, 0.56, 6.979), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
       	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.062, -0.098), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["nato_pistolsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/r_pistol_suppresor.mdl", bone = "weapon", rel = "", pos = Vector(0, -0.4, 10), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
@@ -91,6 +92,8 @@ end
 SWEP.MuzzleVelocity = 5000-- in meter/s
 
 
+SWEP.RPEQPosAdjust = Vector(-0.5, 0, 0)
+SWEP.RPEQLaserAngAdjust = Angle(0, 0, 0)
 
 
 
@@ -100,6 +103,7 @@ SWEP.Attachments = {
 	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
 	{header = "Handguard", offset = {-500,150}, atts = {"sec_vfg"}},
+	{header = "Tac slot", offset = {-10,150}, atts = {"ranpeq"}},
    ["+reload"] = {header = "Ammo", offset = {100, 600}, atts = {"am_magnum", "am_matchgrade"}},
 }
    

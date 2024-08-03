@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	$baseTexture 			"models\r_shared\peq15_tan_diffuse"
+	$bumpmap 			"models\r_shared\peq15_normal"
+	
+	$nocull "1"
+	$color 			"[1 1 1] "
+	$halflambert 			"1"
+	
+	
+	
+	
+
+	$phong  				"1"
+	$phongexponent 		"45"
+	$phongboost 			".2"
+	$phongfresnelranges 	"[.5 1 3]"
+	$phongtint 			"[1 1 1]"
+	$phongalbedotint 		"1"	
+	
+
+	
+	$rimlight               "1"
+	$rimlightexponent       "250"
+	$rimlightboost          ".02"	
+	$rimmask 				"1" 	        
+}

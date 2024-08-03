@@ -51,6 +51,7 @@ if CLIENT then
 	
 	SWEP.AttachmentModelsVM = {
 
+["ranpeq"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/a_laser_peq15.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.595, 6.454), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["natoheavysup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_heavysup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.1, 16), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 ["natolightsup"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/nato_lightsup.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.1, 16), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
@@ -88,7 +89,8 @@ end
 
 SWEP.MuzzleVelocity = 880 -- in meter/s
 
-
+SWEP.RPEQPosAdjust = Vector(-0.5, 0, 0)
+SWEP.RPEQLaserAngAdjust = Angle(0, 0, 0)
 
 
 SWEP.SightBGs = {main = 1 , regular = 0 , none = 1}
@@ -100,6 +102,7 @@ SWEP.FrontBGs = {main = 2 , regular = 0 , none = 1}
 SWEP.Attachments = {
 	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc", "reotech","rkobra", "racog","relcan"}},
 	{header = "Lower Rail", offset = {0, 350}, atts = {"sec_vfg"}},
+	{header = "Upper Rail 2", offset = {600, -250}, atts = {"ranpeq"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	{header = "FS", offset = {0, -100}, atts = {"nofs"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}},
