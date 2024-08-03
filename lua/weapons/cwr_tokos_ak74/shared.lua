@@ -196,9 +196,9 @@ SWEP.Spawnable			= true
 SWEP.AdminSpawnable		= true
 
 SWEP.Primary.ClipSize		= 30
-SWEP.Primary.DefaultClip	= 120
+SWEP.Primary.DefaultClip	= 500
 SWEP.Primary.Automatic		= true
-SWEP.Primary.Ammo			= "5.56x45MM"
+SWEP.Primary.Ammo			= "5.45x39MM"
 
 SWEP.FireDelay = 60 / 700
 SWEP.FireSound = "TOKOS_AK_FIRE"
