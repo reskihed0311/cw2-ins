@@ -199,11 +199,11 @@ SWEP.AimMobilitySpreadMod = 0.1
 SWEP.VelocitySensitivity = 0.5
 
 SWEP.HipSpread = 0.10
-SWEP.AimSpread = 0.005
+SWEP.AimSpread = 0.008
 SWEP.VelocitySensitivity = 1
-SWEP.MaxSpreadInc = 0.090
-SWEP.SpreadPerShot = 0.005
-SWEP.SpreadCooldown = 0.05
+SWEP.MaxSpreadInc = 0.1
+SWEP.SpreadPerShot = 0.010
+SWEP.SpreadCooldown = 0.10
 SWEP.Shots = 1
 SWEP.Damage = 42
 

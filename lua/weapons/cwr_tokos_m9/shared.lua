@@ -23,7 +23,7 @@ if CLIENT then
 	SWEP.ForeGripOffsetCycle_Reload_Empty = 0.9
 	SWEP.Shell = "smallshell"
 	
-	SWEP.IronsightPos = Vector(-3.161, -5.682, 1.679)
+	SWEP.IronsightPos = Vector(-3.161, -2.682, 1.679)
 	SWEP.IronsightAng = Vector(0, 0, 0)
 
 	
@@ -154,7 +154,7 @@ SWEP.Primary.DefaultClip	= 120
 SWEP.Primary.Automatic		= false
 SWEP.Primary.Ammo			= "9x19MM"
 
-SWEP.FireDelay = 60 / 450
+SWEP.FireDelay = 60 / 550
 SWEP.FireSound = "TOKOS_M9_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_M9_FIRE_SUPPRESSED"
 SWEP.Recoil = 1.5
@@ -163,8 +163,8 @@ SWEP.Recoil = 1.5
 SWEP.AimMobilitySpreadMod = 0.1
 SWEP.VelocitySensitivity = 0.5
 
-SWEP.HipSpread = 0.50
-SWEP.AimSpread = 0.005
+SWEP.HipSpread = 0.010
+SWEP.AimSpread = 0.001
 SWEP.VelocitySensitivity = 1
 SWEP.MaxSpreadInc = 0.010
 SWEP.SpreadPerShot = 0.001
