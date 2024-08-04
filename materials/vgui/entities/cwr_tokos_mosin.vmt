@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/entities/cwr_tokos_mosin"
+	"$translucent" 1
+}
