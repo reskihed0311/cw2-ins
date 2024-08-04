@@ -210,7 +210,7 @@ SWEP.Primary.Ammo			= "7.62x39MM"
 SWEP.FireDelay = 60 / 350
 SWEP.FireSound = "TOKOS_FAL_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_FAL_FIRE_SUPPRESSED"
-SWEP.Recoil = 2.3
+SWEP.Recoil = 2.8
 
 
 SWEP.AimMobilitySpreadMod = 0.1
