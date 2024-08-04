@@ -124,7 +124,6 @@ function att:drawRenderTarget()
 end
 
 function att:attachFunc()
-	self.OverrideAimMouseSens = 0.35
 	self.SimpleTelescopicsFOV = 12
 	self.AimViewModelFOV = 50
 	self.BlurOnAim = true
