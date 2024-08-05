@@ -49,6 +49,10 @@ if CLIENT then
 	SWEP.RACOGPos = Vector(-3.201, -7, 0)
     SWEP.RACOGAng = Vector(0, 0, 0)
 
+	SWEP.LPVOPos = Vector(-3.195, -7, -0.06)
+    SWEP.LPVOAng = Vector(0, 0, 0)
+
+
 
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-3.201, -5, -1.65), [2] = Vector(0, 0, 0)}}
 
@@ -90,6 +94,7 @@ if CLIENT then
 	["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+	["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.445, 1.067), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 
@@ -107,7 +112,7 @@ SWEP.MuzzleVelocity = 2500 -- in meter/s
 
 
 SWEP.Attachments = {
-	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc" , "rkobra", "reotech", "racog", "relcan","mx4"}},
+	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc" , "rkobra", "reotech", "racog", "relcan", "rlpvo","mx4"}},
 	 {header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	 {header = "Lower", offset = {0, 350}, atts = {"sec_vfg"}},
 	 {header = "Tac - Barrel", offset = {200, -100}, atts = {"laserband"}},

@@ -49,6 +49,11 @@ if CLIENT then
 	SWEP.RACOGPos = Vector(-2.681, -3.454, -0.9)
     SWEP.RACOGAng = Vector(0, 0, 0)
 
+
+	SWEP.LPVOPos = Vector(-2.665, -2.726, -0.87)
+SWEP.LPVOAng = Vector(0, 0, 0)
+
+
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.681, -2.454, -2.48), [2] = Vector(0, 0, 0)}}
 
 	SWEP.SightWithRail = true
@@ -62,7 +67,7 @@ if CLIENT then
 		["r_pbs1"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/pbs1_can.mdl", bone = "weapon", rel = "", pos = Vector(0, -0.9, 21), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 
-
+		["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.511, -1.5), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 		["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_ak.mdl", bone = "weapon", rel = "", pos = Vector(0.589, -1.162, -0.58), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
@@ -88,7 +93,7 @@ SWEP.MuzzleVelocity = 4500 -- in meter/s
 
 
 SWEP.Attachments = {
-	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc" , "rkobra", "reotech", "racog", "relcan",}},
+	 {header = "Upper Rail Mount", offset = {800, 0}, atts = {"rdsc" , "rkobra", "reotech", "racog", "relcan", "rlpvo"}},
 	 {header = "Muzzle Devices", offset = {-400, 0}, atts = {"r_pbs1"}},
 	["+reload"] = {header = "Ammo", offset = {300, 500}, atts = {"am_magnum", "am_matchgrade"}},
 }

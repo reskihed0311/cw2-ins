@@ -42,6 +42,11 @@ if CLIENT then
 	SWEP.RKOBRAPos = Vector(-2.6, -6.652, 0.3)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
 
+
+	SWEP.LPVOPos = Vector(-2.595, -5.981, -0.281)
+	SWEP.LPVOAng = Vector(0, 0, 0)
+	
+
 	SWEP.ELCPos = Vector(-2.6, -4, -0.45)
     SWEP.ELCAng = Vector(0, 0, 0)
 
@@ -56,6 +61,7 @@ if CLIENT then
 	
 	SWEP.AttachmentModelsVM = {
 
+["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.169, -1.058), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 ["ranpeq"] = { type = "Model", model = "models/tokos_weaponry/shared/tac/a_laser_peq15.mdl", bone = "weapon", rel = "", pos = Vector(-1.354, -0.176, 6.243), angle = Angle(90, 0, 0), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["sec_vfg"] = { type = "Model", model = "models/tokos_weaponry/shared/grips/a_foregrip_sec.mdl", bone = "weapon", rel = "", pos = Vector(0, 0.56, 6.979), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
       	["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.062, -0.098), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
@@ -100,7 +106,7 @@ SWEP.RPEQLaserAngAdjust = Angle(0, 0, 0)
 
 
 SWEP.Attachments = {
-	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan"}},
+	{header = "Optic ", offset = {450, -250}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan", "rlpvo"}},
 	{header = "Muzzle Device", offset = {-100, -100}, atts = {"nato_pistolsup"}},
 	{header = "Handguard", offset = {-500,150}, atts = {"sec_vfg"}},
 	{header = "Tac slot", offset = {-10,150}, atts = {"ranpeq"}},

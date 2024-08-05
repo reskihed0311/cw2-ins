@@ -63,6 +63,9 @@ if CLIENT then
 	SWEP.REOTECHPos = Vector(-3.52, -8.198, 0.35)
     SWEP.REOTECHAng = Vector(0, 0, 0)
 
+	SWEP.LPVOPos = Vector(-3.52, -10.198, 0.05)
+    SWEP.LPVOAng = Vector(0, 0, 0)
+
 
 	SWEP.ELCPos = Vector(-3.52, -8.198, -0.28)
     SWEP.ELCAng = Vector(0, 0, 0)
@@ -84,6 +87,7 @@ if CLIENT then
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.421, 2.691), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.421, 2.691), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.421, 2.691), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.421, 2.691), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 
 	
 	}
@@ -106,7 +110,7 @@ SWEP.MuzzleVelocity = 880 -- in meter/s
 
 
 SWEP.Attachments = {
-	{header = "Upper Rail 1", offset = {700, 0}, atts = {"rdsc", "reotech","rkobra","racog", "relcan"}},
+	{header = "Upper Rail 1", offset = {700, 0}, atts = {"rdsc", "reotech","rkobra","racog", "relcan", "rlpvo"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	{header = "Lower", offset = {0, 350}, atts = {"sec_vfg"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}},

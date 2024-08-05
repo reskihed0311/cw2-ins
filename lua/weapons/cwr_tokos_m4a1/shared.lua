@@ -13,7 +13,7 @@ if CLIENT then
 	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_m4a1")
 	killicon.Add( "cwr_tokos_m4a1", "vgui/entities/cwr_tokos_m4a1", Color(255, 0, 0, 0))
 	
-	SWEP.MuzzleEffect = "muzzleflash_6"
+	SWEP.MuzzleEffect = "muzzleflash_ots"
 	SWEP.PosBasedMuz = false
 	SWEP.SnapToGrip = true
 	SWEP.ShellScale = 0.5
@@ -48,6 +48,10 @@ if CLIENT then
 
 	SWEP.RKOBRAPos = Vector(-2.52, -4.776, 0.68)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
+
+	SWEP.LPVOPos = Vector(-2.52, -6.639, 0.265)
+	SWEP.LPVOAng = Vector(0, 0, 0)
+	
 	
 	SWEP.AttachmentModelsVM = {
 
@@ -60,6 +64,7 @@ if CLIENT then
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.283, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.244, -0.255), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	
 	}
 
@@ -100,7 +105,7 @@ SWEP.FrontBGs = {main = 2 , regular = 0 , none = 1}
 
 
 SWEP.Attachments = {
-	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc", "reotech","rkobra", "racog","relcan"}},
+	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc", "reotech","rkobra", "racog","relcan", "rlpvo"}},
 	{header = "Lower Rail", offset = {0, 350}, atts = {"sec_vfg"}},
 	{header = "Upper Rail 2", offset = {600, -250}, atts = {"ranpeq"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},

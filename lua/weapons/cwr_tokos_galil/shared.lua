@@ -43,6 +43,9 @@ if CLIENT then
 	SWEP.RACOGPos = Vector(-2.25, -3, -0.92)
     SWEP.RACOGAng = Vector(0, 0, 0)
 
+	SWEP.LPVOPos = Vector(-2.26, -3, -0.88)
+    SWEP.LPVOAng = Vector(0, 0, 0)
+
 	SWEP.REOTECHPos = Vector(-2.25, -4.97, -0.50)
     SWEP.REOTECHAng = Vector(0, 0, 0)
 	SWEP.ForegripOverridePos = {
@@ -81,6 +84,7 @@ if CLIENT then
 	["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(-0.244, -2.468, 0.556), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(-0.244, -2.468, 0.556), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },	
 	["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(-0.244, -2.468, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },	
+	["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(-0.244, -2.468, -0.2), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 
@@ -97,7 +101,7 @@ SWEP.MuzzleVelocity = 880 -- in meter/s
 
 
 SWEP.Attachments = {
-	{header = "Dove Tail", offset = {900, -100}, atts = {"rdsc","reotech", "rkobra", "racog", "relcan"}},
+	{header = "Dove Tail", offset = {900, -100}, atts = {"rdsc","reotech", "rkobra", "racog", "relcan", "rlpvo"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	{header = "Lower", offset = {0, 350}, atts = {"sec_vfg"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}}

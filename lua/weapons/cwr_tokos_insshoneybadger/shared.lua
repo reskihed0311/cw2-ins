@@ -46,6 +46,10 @@ if CLIENT then
 	SWEP.RACOGPos = Vector(-2.705, -5.39, 0.432)
     SWEP.RACOGAng = Vector(0, 0, 0)
 
+	SWEP.LPVOPos = Vector(-2.715, -5.39, 0.42)
+    SWEP.LPVOAng = Vector(0, 0, 0)
+
+
 	SWEP.RKOBRAPos = Vector(-2.701, -6.926, 0.912)
     SWEP.RKOBRAAng = Vector(0, 0, 0)
 	
@@ -60,7 +64,7 @@ if CLIENT then
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.043, 0.3), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.043, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.043, 0), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-	
+		["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.043, -1.5), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 	SWEP.ForegripOverridePos = {
@@ -97,7 +101,7 @@ SWEP.SightBGs = {main = 1 , regular = 0 , none = 1}
 
 
 SWEP.Attachments = {
-	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc", "reotech","rkobra", "racog","relcan"}},
+	{header = "Upper Rail", offset = {900, -100}, atts = {"rdsc", "reotech","rkobra", "racog","relcan", "rlpvo"}},
 	{header = "Lower Rail", offset = {0, 350}, atts = {"sec_vfg"}},
 	{header = "Upper Rail 2", offset = {600, -250}, atts = {"ranpeq"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},

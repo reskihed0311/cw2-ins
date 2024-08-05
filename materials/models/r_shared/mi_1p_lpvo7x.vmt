@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\r_shared\T_1P_LPVO_D"
+	"$bumpmap" "models\r_shared\T_1P_LPVO_N"
+	"$phongexponenttexture" "models\r_shared\T_1P_LPVO_M"
+	
+	
+	"$envmap" "models\weapons\cw_tokos\shared\envmap_unfuck"
+}

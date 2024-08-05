@@ -32,6 +32,7 @@ if CLIENT then
 		["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.335, -0.308), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.335, -0.308), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.335, -0.308), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+		["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(-0.029, -2.165, 0.405), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 	}
 
 	SWEP.MX4Pos = Vector(-2.448, -3.372, 0.479)
@@ -50,6 +51,10 @@ if CLIENT then
 
 	SWEP.RACOGPos = Vector(-2.421, -5.286, -0.25)
 	SWEP.RACOGAng = Vector(0, 0, 0)
+
+	SWEP.LPVOPos = Vector(-2.45, -6.789, -0.059)
+SWEP.LPVOAng = Vector(0, 0, 0)
+
 
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.421, -3.286, -1.85), [2] = Vector(0, 0, 0)}}
 	
@@ -93,7 +98,7 @@ SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
 
 
 SWEP.Attachments = {
-	{header = "Optic", offset = {1000, 0}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan","mx4"}},
+	{header = "Optic", offset = {1000, 0}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan", "rlpvo","mx4"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"natolightsup", "natoheavysup"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}},
 }

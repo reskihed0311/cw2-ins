@@ -28,7 +28,7 @@ if CLIENT then
 	SWEP.AttachmentModelsVM = {
 		["md_rail"] = { type = "Model", model = "models/tokos_weaponry/shared/mounts/modkit_7.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.757, 13.496), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["r_pbs1"] = { type = "Model", model = "models/tokos_weaponry/shared/muzzledevices/pbs1_can.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.15, 33), angle = Angle(-90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-
+		["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.918, 11.826), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["mx4"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/mx4.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.918, 11.826), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["rdsc"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/shared_aimpoint.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.918, 11.826), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		["rkobra"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/kobra.mdl", bone = "weapon", rel = "", pos = Vector(0, -1.918, 11.826), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
@@ -53,6 +53,10 @@ if CLIENT then
 
 	SWEP.RACOGPos = Vector(-3.08, -20, -0.281)
 	SWEP.RACOGAng = Vector(0, 0, 0)
+
+	SWEP.LPVOPos = Vector(-3.075, -19.81, -0.30)
+	SWEP.LPVOAng = Vector(0, 0, 0)
+	
 
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-3.08, -20, -1.928), [2] = Vector(0, 0, 0)}}
 	
@@ -96,7 +100,7 @@ SWEP.LaserBandAngAdjust = Angle(0, 0, 0)
 
 
 SWEP.Attachments = {
-	{header = "Optic", offset = {1000, 0}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan","mx4"}},
+	{header = "Optic", offset = {1000, 0}, atts = {"rdsc",  "reotech","rkobra", "racog","relcan", "rlpvo","mx4"}},
 	{header = "Muzzle Devices", offset = {-400, 0}, atts = {"r_pbs1"}},
 	["+reload"] = {header = "Ammo", offset = {200, 700}, atts = {"am_magnum", "am_matchgrade"}},
 }
