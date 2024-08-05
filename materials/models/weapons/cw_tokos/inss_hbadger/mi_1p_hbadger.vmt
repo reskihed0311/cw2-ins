@@ -5,5 +5,5 @@
 	"$phongexponenttexture" "models\weapons\cw_tokos\inss_hbadger\T_1P_HB_M"
 	
 	
-	"$envmap" "env_cubemap"
+	"$envmap" "models\weapons\cw_tokos\shared/envmap_unfuck"
 }
