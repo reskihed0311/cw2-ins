@@ -6,6 +6,13 @@ att.aimPos = {"LPVOPos", "LPVOAng"}
 att.FOVModifier = 5
 att.isSight = true
 
+att.statModifiers = {
+
+
+OverallMouseSensMult = -0.15} 
+
+
+
 if CLIENT then
 	att.displayIcon = surface.GetTextureID("vgui/atticons/rlpvo")
 	att.description = {[1] = {t = "Provides 1-3x magnification.", c = CustomizableWeaponry.textColors.POSITIVE},

@@ -6,6 +6,12 @@ att.aimPos = {"MX4Pos", "MX4Ang"}
 att.FOVModifier = 5
 att.isSight = true
 
+
+att.statModifiers = {
+
+
+	OverallMouseSensMult = -0.15} 
+
 if CLIENT then
 	att.displayIcon = surface.GetTextureID("vgui/atticons/mx4")
 	att.description = {[1] = {t = "Provides 4-8x magnification.", c = CustomizableWeaponry.textColors.POSITIVE},
