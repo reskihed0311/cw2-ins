@@ -13,7 +13,7 @@ if CLIENT then
 	SWEP.SelectIcon = surface.GetTextureID("vgui/entities/cwr_tokos_insshoneybadger")
 	killicon.Add( "cwr_tokos_insshoneybadger", "vgui/entities/cwr_tokos_insshoneybadger1", Color(255, 0, 0, 0))
 	
-	SWEP.MuzzleEffect = "muzzleflash_6"
+	SWEP.MuzzleEffect = "muzzleflash_OTS"
 	SWEP.PosBasedMuz = false
 	SWEP.SnapToGrip = true
 	SWEP.ShellScale = 0.5
