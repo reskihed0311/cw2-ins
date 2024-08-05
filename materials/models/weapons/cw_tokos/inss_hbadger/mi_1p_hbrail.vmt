@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\cw_tokos\inss_hbadger\T_1P_HBRail_D"
+	"$bumpmap" "models\weapons\cw_tokos\inss_hbadger\T_1P_HBRail_N"
+	"$phongexponenttexture" "models\weapons\cw_tokos\inss_hbadger\T_1P_HBRail_M"
+	
+	"$envmap" "env_cubemap"
+}

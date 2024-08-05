@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\cw_tokos\inss_hbadger\MBUS_D_Tan"
+	"$bumpmap" "models\weapons\cw_tokos\inss_hbadger\MBUS_N"
+	"$lightwarp" "models\weapons\cw_tokos\inss_hbadger\MBUS_M"
+	
+	"$envmap" "env_cubemap"
+	
+	"$nocull" "1"
+}
