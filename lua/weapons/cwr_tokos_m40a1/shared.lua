@@ -52,7 +52,7 @@ if CLIENT then
 	SWEP.RACOGPos = Vector(-2.421, -5.286, -0.25)
 	SWEP.RACOGAng = Vector(0, 0, 0)
 
-	SWEP.LPVOPos = Vector(-2.45, -6.789, -0.059)
+	SWEP.LPVOPos = Vector(-2.45, -6.789, -0.059	)
 SWEP.LPVOAng = Vector(0, 0, 0)
 
 

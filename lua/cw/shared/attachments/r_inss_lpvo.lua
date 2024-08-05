@@ -7,7 +7,7 @@ att.FOVModifier = 5
 att.isSight = true
 
 if CLIENT then
-	att.displayIcon = surface.GetTextureID("vgui/atticons/reclan")
+	att.displayIcon = surface.GetTextureID("vgui/atticons/rlpvo")
 	att.description = {[1] = {t = "Provides 1-3x magnification.", c = CustomizableWeaponry.textColors.POSITIVE},
 	[2] = {t = "For long ranges.", c = CustomizableWeaponry.textColors.NEGATIVE},
 
