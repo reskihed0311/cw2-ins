@@ -44,7 +44,7 @@ if CLIENT then
 	SWEP.RACOGPos = Vector(-2.741, -8.839, -0.201)
     SWEP.RACOGAng = Vector(0, 0, 0)
 
-	SWEP.RKOBRAPos = Vector(-2.741, -8.351, 0.317)
+	SWEP.RKOBRAPos = Vector(-2.741, -8.351, 0.25)
 SWEP.RKOBRAAng = Vector(0, 0, 0)
 
 
