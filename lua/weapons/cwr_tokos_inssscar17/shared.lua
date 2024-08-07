@@ -52,7 +52,7 @@ SWEP.RKOBRAAng = Vector(0, 0, 0)
 	SWEP.LPVOPos = Vector(-2.741, -8.351, -0.216)
     SWEP.LPVOAng = Vector(0, 0, 0)
 
-	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.741, -8.441, -1.806), [2] = Vector(0, 0, 0)}}
+	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.741, -8.441, -1.9), [2] = Vector(0, 0, 0)}}
 
 	SWEP.ForegripOverridePos = {
 
