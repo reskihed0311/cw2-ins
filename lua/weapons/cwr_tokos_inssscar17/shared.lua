@@ -49,7 +49,7 @@ SWEP.RKOBRAAng = Vector(0, 0, 0)
 
 
 
-	SWEP.LPVOPos = Vector(-2.741, -8.351, -0.216)
+	SWEP.LPVOPos = Vector(-2.741, -5.351, -0.216)
     SWEP.LPVOAng = Vector(0, 0, 0)
 
 	SWEP.BackupSights = {["relcan"] = {[1] = Vector(-2.741, -8.441, -1.9), [2] = Vector(0, 0, 0)}}
@@ -90,7 +90,7 @@ SWEP.RKOBRAAng = Vector(0, 0, 0)
 			["reotech"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eotech.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, -0.015), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 			["relcan"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/eclan.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, -0.015), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 			["racog"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/acog.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, -0.015), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
-			["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, -0.015), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
+			["rlpvo"] = { type = "Model", model = "models/tokos_weaponry/shared/optics/inss_lpvo.mdl", bone = "weapon", rel = "", pos = Vector(0, -2.3, -2), angle = Angle(90, 0, -90), size = Vector(1, 1, 1), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} },
 		
 	}
 
@@ -199,7 +199,7 @@ SWEP.Primary.DefaultClip	= 500
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo			= "7.62X51MM"
 
-SWEP.FireDelay = 60 / 600
+SWEP.FireDelay = 60 / 700
 SWEP.FireSound = "TOKOS_SCAR_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_SCAR_FIRE_SUPPRESSED"
 SWEP.Recoil = 1.9
