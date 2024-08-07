@@ -194,7 +194,7 @@ SWEP.Primary.Ammo			= ".300 Blackout"
 SWEP.FireDelay = 60 / 1100
 SWEP.FireSound = "TOKOS_AAC_FIRE"
 SWEP.FireSoundSuppressed = "TOKOS_AAC_FIRE_SUPPRESSED"
-SWEP.Recoil = 0.5
+SWEP.Recoil = 0.9
 
 
 
