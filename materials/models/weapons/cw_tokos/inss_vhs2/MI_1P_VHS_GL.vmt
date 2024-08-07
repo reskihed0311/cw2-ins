@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models\weapons\cw_tokos\inss_vhs2\MI_1P_VHS_GL_rgb"
+    "$bumpmap" "models\weapons\cw_tokos\inss_vhs2\MI_1P_VHS_GL_n"
+
+    /////////////////
+    "$color2" "[1 1 1]"                                     //do not touch this
+    "$blendtintbybasealpha" "0"                             //do not touch this
+    /////////////////
+
+    "$phong" "1"
+    "$phongboost" "0"
+    "$phongalbedotint" "0"
+    "$phongalbedoboost" "0"                                //toy around with this
+    "$phongfresnelranges" "[1 0.1 0]"
+
+
+    /////////////////
+    "$normalmapalphaenvmapmask" "1"                         //do not touch this
+    /////////////////
+
+    "$envmap" "models\weapons\cw_tokos\shared\specularity_00"
+    "$envmaptint" "[0.01 0.01 0.01]"                 
+
+      
+}
