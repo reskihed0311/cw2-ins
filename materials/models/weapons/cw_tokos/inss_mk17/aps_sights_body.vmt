@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\cw_tokos\inss_mk17\aps_sights_d_tan"
+	"$bumpmap" "models\weapons\cw_tokos\inss_mk17\aps_sights_n"
+	"$phongexponenttexture" "models\weapons\cw_tokos\inss_mk17\aps_sights_m_tan"
+	
+	"$metal" "1"
+	"$roughnessmultiplier" ".9"
+	
+	"$fuzz" "1"
+	"$fuzzmultiplier" ".2"
+	
+	"$envmap" "models\weapons\cw_tokos\shared\envmap_unfuck"
+	"$srgbtint" "[.95 .95 1.25]"
+}

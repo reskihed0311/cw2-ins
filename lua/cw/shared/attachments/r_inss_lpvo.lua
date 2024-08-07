@@ -27,12 +27,14 @@ if CLIENT then
 	att.telescopicsFOVRange = {
 		50,
 		30,
+		10,
 	}
 	
 	att.newTelescopicsFOV = true
 	att.simpleTelescopicsFOVRange = {
 		50,
-		35,
+		30,
+		10,
 	}
 
 	local lens = surface.GetTextureID("cw2/gui/lense")
