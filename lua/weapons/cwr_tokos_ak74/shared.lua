@@ -33,6 +33,10 @@ if CLIENT then
     SWEP.M4Pos = Vector(-2.161, -5, -0.48)
     SWEP.M4Ang = Vector(0, 0, 0)
 
+
+	SWEP.RKOBRAPos = Vector(-2.161, -5, -0.30)
+    SWEP.RKOBRAAng = Vector(0, 0, 0)
+
 	SWEP.REOTECHPos = Vector(-2.161, -5, -0.45)
     SWEP.REOTECHAng = Vector(0, 0, 0)
 
