@@ -6,6 +6,12 @@ att.aimPos = {"RACOGPos", "RACOGAng"}
 att.FOVModifier = 5
 att.isSight = true
 
+
+att.statModifiers = {
+
+
+	OverallMouseSensMult = -0.35} 
+
 if CLIENT then
 	att.displayIcon = surface.GetTextureID("vgui/atticons/racog")
 	att.description = {[1] = {t = "Provides 4x magnification.", c = CustomizableWeaponry.textColors.POSITIVE},
@@ -124,6 +130,7 @@ function att:drawRenderTarget()
 end
 
 function att:attachFunc()
+	self.OverrideAimMouseSens = 0.1
 	self.SimpleTelescopicsFOV = 12
 	self.AimViewModelFOV = 50
 	self.BlurOnAim = true

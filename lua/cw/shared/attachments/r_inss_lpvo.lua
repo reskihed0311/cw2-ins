@@ -9,7 +9,7 @@ att.isSight = true
 att.statModifiers = {
 
 
-OverallMouseSensMult = -0.15} 
+OverallMouseSensMult = -0.35} 
 
 
 
@@ -135,6 +135,7 @@ function att:drawRenderTarget()
 end
 
 function att:attachFunc()
+	self.OverrideAimMouseSens = 0.1
 	self.SimpleTelescopicsFOV = 12
 	self.AimViewModelFOV = 50
 	self.BlurOnAim = true

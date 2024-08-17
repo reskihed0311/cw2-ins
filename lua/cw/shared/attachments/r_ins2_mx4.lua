@@ -10,7 +10,7 @@ att.isSight = true
 att.statModifiers = {
 
 
-	OverallMouseSensMult = -0.15} 
+	OverallMouseSensMult = -0.35} 
 
 if CLIENT then
 	att.displayIcon = surface.GetTextureID("vgui/atticons/mx4")
@@ -87,6 +87,8 @@ function att:drawRenderTarget()
 	
 		local size = self:getRenderTargetSize()
 
+		
+
 		cd.w = size
 		cd.h = size
 		cd.angles = ang
@@ -133,6 +135,7 @@ end
 
 function att:attachFunc()
 
+	self.OverrideAimMouseSens = 0.1
 	self.SimpleTelescopicsFOV = 12
 	self.AimViewModelFOV = 50
 	self.BlurOnAim = true
